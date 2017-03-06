@@ -1,0 +1,160 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Responsive meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Character Generator">
+	
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/float-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:400,900" rel="stylesheet">
+	<title>Parallax Character Generator</title>
+</head>
+
+<body>
+	<header>
+		<div class="row">
+			<div class="col-8">	
+				<h1>Parllax Character Generator</h1>
+			</div>
+
+			<div class="col-2 info" id="info">
+				<img src="img/info_icon.png">
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="row intro hidden" id="intro">
+			<div class="col-12">
+
+				<p>Welcome to the character creator for <a href="http://parallaxminiatures.com/" target="_blank">Parallax: Miniatures</a> 
+
+				<p>From here you will be able to create your character from them list below. Please click on the <span class="inlineButton">read more</span> to get more information on the race and then <span class="inlineButton">create</span> to make the character of your choice. </p>
+
+				<p>Each race has positives and negatives, so feel free to create, test and then create again!</p>
+
+
+
+			</div>
+		</div>
+
+
+
+		<div id="raceSelector">
+			<div class="row">
+				<div class="col-4">
+					<div class="cardBackground">
+						<img src="img/cayad_homepage.png" class="card">
+
+						<div class="row center">
+							<input class="myButton" type="submit" value="Read More" id="cayadReadMore" />
+							<input class="myButton" type="submit" value="Create" id="cayadCardCreator" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-4">
+					<div class="cardBackground">
+						<img src="img/devoid_homepage.png" class="card">
+						<div class="row center">
+							<input class="myButton" type="submit" value="Read More" id="devoidReadMore" />
+							<input class="myButton" type="submit" value="Create" id="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<div class="cardBackground">
+						<img src="img/hadjen_homepage.png" class="card">
+						<div class="row center">
+							<input class="myButton" type="submit" value="Read More" id="hadjenReadMore" />					
+							<input class="myButton" type="submit" value="Create" id="" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<div class="cardBackground">
+						<img src="img/minotaur_homepage.png" class="card">
+						<div class="row center">
+							<input class="myButton" type="submit" value="Read More" id="minotaurReadMore" />
+							<input class="myButton" type="submit" value="Create" id="" />					
+						</div>						
+					</div>
+				</div>
+				
+				<div class="col-4">
+					<div class="cardBackground">
+						<img src="img/sicarius_homepage.png" class="card">
+						<div class="row center">
+							<input class="myButton" type="submit" value="Read More" id="sicariusReadMore" />
+							<input class="myButton" type="submit" value="Create" id="" />					
+						</div>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<div class="cardBackground">
+						<img src="img/tir_homepage.png" class="card">
+						<div class="row center">
+							<input class="myButton" type="submit" value="Read More" id="tirReadMore" />			
+							<input class="myButton" type="submit" value="Create" id="" />		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden" id="caaydCreator">
+			<div class="row">
+				<div class="col-12">
+					<h2>Cayad Creator</h2>
+				</div>				
+			</div>	
+
+			<div class="row">
+				<div class="col-4">
+					<div class="form">
+						<input id="#characterName" type="text" name="characterName" placeholder="Character Name">
+
+						<select id="#path"></select>
+
+						<select id="#form"></select>
+
+						<select id="#awareness"></select>
+
+						<select id="#essence"></select>
+
+						<select id="#weaponLeft"></select>
+
+						<select id="#weaponRight"></select>
+
+						<select id="#armor"></select>
+
+						<select id="#shield"></select>
+					</div>
+				</div>
+
+				<div class="col-8">
+					<img src="img/cayad_blank.png" class="cardCreation">
+					<div class="spacer"></div>
+
+					<img src="img/cayad_blank2.png" class="cardCreation">
+				</div>
+
+			</div>
+
+	</main>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="app.js"></script>	
+</body>
+</html>
