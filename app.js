@@ -81,6 +81,7 @@ $('#cayadCardCreator').click(function() {
 });
 
 $(document).ready(function() {
+	$('.tooltip').tooltipster();
 	$('#templates').load('template.html', function() {
 		console.log($('#character').html());
 	});	
