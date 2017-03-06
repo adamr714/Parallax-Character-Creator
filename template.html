@@ -1,4 +1,19 @@
 
+<script id="character-row" type="text/template">
+	<div class="row">
+		<div class="col-4">
+			{{character1}}
+		</div>
+
+		<div class="col-4">
+			{{character2}}
+		</div>
+		
+		<div class="col-4">
+			{{character3}}
+		</div>
+	</div>
+</script>
 
 <script id="character" type="text/template">
 	<div class="cardBackground">
@@ -11,11 +26,6 @@
 	</div>
 </script>
 
-<script id="character-row" type="text/template">
-	<div class="row">
-		<div class="col-4">
-		</div>
-
-		
-	</div>
+<script id="selection" type="text/template">
+	<option value="{{value}}" {{selected}}>{{label}}</option>
 </script>
