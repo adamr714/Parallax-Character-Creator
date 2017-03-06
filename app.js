@@ -80,3 +80,8 @@ $('#cayadCardCreator').click(function() {
 	$('#info').fadeOut('hidden');
 });
 
+$(document).ready(function() {
+	$('#templates').load('template.html', function() {
+		console.log($('#character').html());
+	});	
+});
