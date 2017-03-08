@@ -183,7 +183,7 @@ input {
     right: .5em;
     top: 4.8em;
     font-weight: bold;
-    line-height: 1.em;
+    line-height: 1em;
   }
 
   .raceName {
@@ -196,20 +196,84 @@ input {
     top: .2em;
 }
 
-@media all and (min-width: 1001px) {
+@media all and (min-width: 1201px) {
   .col-4 {
     width: 33.33%;
   }
+
+  .characterText {
+    font-size: 1em;
+    width: 49%;
+    text-align: right;
+    right: .5em;
+    top: 3.4em;
+  }
 }
 
-@media all and (max-width: 1000px) and (min-width: 700px) {
+/*@media all (max-width: 1200px) and (min-width: 1001px) {
   .col-4 {
-    width: 50%;
+    width: 33.33%;
+  }
+
+  .characterText {
+    font-size: 1em;
+    width: 49%;
+    text-align: right;
+    right: .5em;
+    top: 3.4em;
+  }
+}*/
+@media all and (min-width: 1101px) {
+
+  .col-4 {
+    width: 33%;
+  }
+
+.characterText {
+    font-size: 1.2em;
+    width: 52%;
+    right: .5em;
+    top: 3.8em;
+    font-weight: bold;
+    line-height: 1em;
   }
 }
 
 
-@media all and (max-width: 699px) and (min-width: 400px) {
+
+@media all and (max-width: 1101px) and (min-width: 901px) {
+  .col-4 {
+    width: 50%;
+  }
+
+.characterText {
+    font-size: 1.2em;
+    width: 52%;
+    right: .5em;
+    top: 3.8em;
+    font-weight: bold;
+    line-height: 1em;
+  }
+}
+
+@media all and (max-width: 900px) and (min-width: 570px) {
+  .col-4 {
+    width: 50%;
+  }
+
+.characterText {
+    font-size: 1em;
+    width: 49%;
+    right: .5em;
+    top: 3.8em;
+    font-weight: bold;
+    line-height: 1em;
+  }
+
+}
+
+
+@media all and (max-width: 569px) and (min-width: 400px) {
   .col-4 {
     width: 100%;
   }
@@ -218,115 +282,15 @@ input {
   font-size: 1.3em;
   margin-top: .7em;
   }
-}
-
-
-/*@media screen and (min-width: 800px) {
-    header {
-        background-color: black;
-        height: 100px;
-        text-align: center;
-    }
-
-    .title {
-      color: white;
-      font-size: 1.3em;
-    } 
 
   .characterText {
-    position: absolute;
     font-size: 1em;
-    width: 49%;
-    text-align: right;
-    right: .5em;
-    top: 4.8em;
-    font-weight: bold;
-    line-height: 1.em;
-  }
-
-
-  .raceName {
-    position: absolute;
-    right: .5em;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-    text-shadow: 2px 2px 8px #000;
-    top: .2em;
-  }
-}*/
-
-
-/*@media screen and (min-width: 1250px) {
-  .characterText {
-    position: absolute;
-    font-size: 1.2em;
-    width: 56%;
-    text-align: right;
-    right: .5em;
     top: 3.5em;
-    font-weight: bold;
-    line-height: 1.em;
-  } 
-
-.raceName {
-    position: absolute;
-    right: .5em;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-    text-shadow: 2px 2px 8px #000;
-    top: .2em;
   }
+
+}
 }
 
-@media screen and (min-width: 400px) {}
-    h1 {
-      font-variant: small-caps;
-      font-size: 1.2em;
-      color: white;
-      margin-top: .8em;
-    }
 
-  .characterText {
-    position: absolute;
-    font-size: 1em;
-    width: 49%;
-    text-align: right;
-    right: .5em;
-    top: 3em;
-    font-weight: bold;
-    line-height: 1.em;
-  }
-}    
 
-@media screen and (min-width: 768px) {}
-    h1 {
-      font-variant: small-caps;
-      font-size: 1.2em;
-      color: white;
-      margin-top: .8em;
-    }
 
-  .raceName {
-    position: absolute;
-    right: .5em;
-    color: white;
-    font-weight: bold;
-    font-size: 3.1em;
-    text-shadow: 2px 2px 8px #000;
-    top: .2em;
-  } 
-
-  .characterText {
-    position: absolute;
-    font-size: 2em;
-    width: 52%;
-    text-align: right;
-    right: .5em;
-    top: 3em;
-    font-weight: bold;
-    line-height: 1.em;
-  }
-
- }  */
