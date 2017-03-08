@@ -87,7 +87,7 @@ input {
     box-shadow: 2px 2px 8px #000;
     background-color: darkslategrey;
     margin-top: 2em;
-    position: relative;
+    min-width:250px;
 }
 
 .myButton {
@@ -127,7 +127,7 @@ input {
   height: 100%;
 }
 
-.characterText {
+/*.characterText {
   position: absolute;
   font-size: 1em;
   width: 49%;
@@ -136,65 +136,62 @@ input {
   top: 4.8em;
   font-weight: bold;
   line-height: 1.em;
-}
+}*/
 
+
+.cardContent {
+  min-height: 14em;
+  background-size: cover;
+}
 
 .cayadBKG {
   background-image: url("../img/cayad_homepage.png");
-  background-size: cover;
-  height: 31%;
 }
 
 
 .devoidBKG {
   background-image: url("../img/devoid_homepage.png");
-  background-size: cover;
-  height: 31%;
 }
 
 .hadjenBKG {
   background-image: url("../img/hadjen_homepage.png");
-  background-size: cover;
-  height: 31%;
 }
 
 .minotaurBKG {
   background-image: url("../img/minotaur_homepage.png");
-  background-size: cover;
-  height: 31%;
 }
 
 .sicariusBKG {
   background-image: url("../img/sicarius_homepage.png");
-  background-size: cover;
-  height: 31%;
 }
 
 .tirBKG {
   background-image: url("../img/tir_homepage.png");
-  background-size: cover;
-  height: 31%;
 }
 
   .characterText {
-    position: absolute;
+    /*position: absolute;*/
     font-size: 1em;
-    width: 49%;
+    width: 100%%;
     text-align: right;
-    right: .5em;
-    top: 4.8em;
+    /*right: .5em;*/
+    /*top: 4.8em;*/
     font-weight: bold;
     line-height: 1em;
+    margin-left:8em;
+    padding-top:1em;
+    padding-right:0.2em;
   }
 
   .raceName {
-    position: absolute;
-    right: .5em;
+    padding-top:0.1em;
+    padding-bottom:0.1em;
+    padding-right: 0.2em;
+    text-align: right;
     color: white;
     font-weight: bold;
     font-size: 2em;
     text-shadow: 2px 2px 8px #000;
-    top: .2em;
 }
 
 @media all and (min-width: 1201px) {
@@ -202,6 +199,8 @@ input {
     width: 33.33%;
   }
 
+  /*
+  NEVILLE: to uncomment;
   .characterText {
     font-size: 1em;
     width: 49%;
@@ -209,6 +208,7 @@ input {
     right: .5em;
     top: 3.4em;
   }
+  */
 }
 
 /*@media all (max-width: 1200px) and (min-width: 1001px) {
@@ -230,6 +230,8 @@ input {
     width: 33%;
   }
 
+ /*
+  NEVILLE: to uncomment;
 .characterText {
     font-size: 1.2em;
     width: 52%;
@@ -238,6 +240,7 @@ input {
     font-weight: bold;
     line-height: 1em;
   }
+  */
 }
 
 
@@ -247,6 +250,8 @@ input {
     width: 50%;
   }
 
+/*
+  NEVILLE: to uncomment;
 .characterText {
     font-size: 1.2em;
     width: 52%;
@@ -255,6 +260,7 @@ input {
     font-weight: bold;
     line-height: 1em;
   }
+  */
 }
 
 @media all and (max-width: 900px) and (min-width: 570px) {
@@ -262,6 +268,8 @@ input {
     width: 50%;
   }
 
+/*
+  NEVILLE: to uncomment;
 .characterText {
     font-size: 1em;
     width: 49%;
@@ -270,7 +278,7 @@ input {
     font-weight: bold;
     line-height: 1em;
   }
-
+*/
 }
 
 
@@ -284,12 +292,13 @@ input {
   margin-top: .7em;
   }
 
+/*
+  NEVILLE: to uncomment;
   .characterText {
     font-size: 1em;
     top: 3.5em;
   }
-
-}
+  */
 }
 
 
