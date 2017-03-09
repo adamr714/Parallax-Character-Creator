@@ -88,6 +88,10 @@ input {
     background-color: darkslategrey;
     margin-top: 2em;
     min-width:250px;
+    max-width: 440px;
+    background-image: url(../img/Parchement_BKG.png);
+    background-size:cover;
+    opacity: .9;
 }
 
 .myButton {
@@ -119,6 +123,10 @@ input {
   text-align: center;
 }
 
+.grey {
+    background-color: darkslategrey;
+}
+
 .spacer {
   height: .5em;
 }
@@ -127,16 +135,134 @@ input {
   height: 100%;
 }
 
-/*.characterText {
-  position: absolute;
-  font-size: 1em;
-  width: 49%;
-  text-align: right;
-  right: .5em;
-  top: 4.8em;
-  font-weight: bold;
-  line-height: 1.em;
-}*/
+/*Cayad Art*/
+.cayadTop {
+  background-image: url(../img/cayad_top.png);
+  background-size:100% 100%;
+}
+
+.cayadArt {
+  background-image: url(../img/cayad_art.png);
+  background-repeat:no-repeat; 
+  background-position: left bottom;
+  margin-top:-2.6em;
+  margin-bottom:-2.5em;
+}
+
+.cayadBottom {
+   background-image: url(../img/cayad_bottom.png);
+   background-size:100% 100%;
+   height:2.3em;
+   opacity:1
+}
+
+
+/*Devoid Art*/
+.devoidTop {
+  background-image: url(../img/devoid_top.png);
+  background-size:100% 100%;
+}
+
+.devoidArt {
+  background-image: url(../img/devoid_art.png);
+  background-repeat:no-repeat; 
+  background-position: left bottom;
+  margin-top:-2.6em;
+  margin-bottom:-2.5em;
+}
+
+.devoidBottom {
+   background-image: url(../img/devoid_bottom.png);
+   background-size:100% 100%;
+   height:2.3em;
+   opacity:1
+}
+
+/*Hadjen Art*/
+.hadjenTop {
+  background-image: url(../img/hadjen_top.png);
+  background-size:100% 100%;
+}
+
+.hadjenArt {
+  background-image: url(../img/hadjen_art.png);
+  background-repeat:no-repeat; 
+  background-position: left bottom;
+  margin-top:-2.6em;
+  margin-bottom:-2.5em;
+}
+
+.hadjenBottom {
+   background-image: url(../img/hadjen_bottom.png);
+   background-size:100% 100%;
+   height:2.3em;
+   opacity:1
+}
+
+
+/*Minotaur Art*/
+.minotaurTop {
+  background-image: url(../img/minotaur_top.png);
+  background-size:100% 100%;
+}
+
+.minotaurArt {
+  background-image: url(../img/minotaur_art.png);
+  background-repeat:no-repeat; 
+  background-position: left bottom;
+  margin-top:-2.6em;
+  margin-bottom:-2.5em;
+}
+
+.minotaurBottom {
+   background-image: url(../img/minotaur_bottom.png);
+   background-size:100% 100%;
+   height:2.3em;
+   opacity:1
+}
+
+/*Sicarius Art*/
+.sicariusTop {
+  background-image: url(../img/sicarius_top.png);
+  background-size:100% 100%;
+}
+
+.sicariusArt {
+  background-image: url(../img/sicarius_art.png);
+  background-repeat:no-repeat; 
+  background-position: left bottom;
+  margin-top:-2.6em;
+  margin-bottom:-2.5em;
+}
+
+.sicariusBottom {
+   background-image: url(../img/sicarius_bottom.png);
+   background-size:100% 100%;
+   height:2.3em;
+   opacity:1
+}
+
+
+/*Tir Art*/
+.tirTop {
+  background-image: url(../img/tir_top.png);
+  background-size:100% 100%;
+}
+
+.tirArt {
+  background-image: url(../img/tir_art.png);
+  background-repeat:no-repeat; 
+  background-position: left bottom;
+  margin-top:-2.6em;
+  margin-bottom:-2.5em;
+}
+
+.tirBottom {
+   background-image: url(../img/tir_bottom.png);
+   background-size:100% 100%;
+   height:2.3em;
+   opacity:1
+}
 
 
 .cardContent {
@@ -144,38 +270,10 @@ input {
   background-size: cover;
 }
 
-.cayadBKG {
-  background-image: url("../img/cayad_homepage.png");
-}
-
-
-.devoidBKG {
-  background-image: url("../img/devoid_homepage.png");
-}
-
-.hadjenBKG {
-  background-image: url("../img/hadjen_homepage.png");
-}
-
-.minotaurBKG {
-  background-image: url("../img/minotaur_homepage.png");
-}
-
-.sicariusBKG {
-  background-image: url("../img/sicarius_homepage.png");
-}
-
-.tirBKG {
-  background-image: url("../img/tir_homepage.png");
-}
-
   .characterText {
-    /*position: absolute;*/
     font-size: 1em;
     width: 100%%;
     text-align: right;
-    /*right: .5em;*/
-    /*top: 4.8em;*/
     font-weight: bold;
     line-height: 1em;
     margin-left:8em;
@@ -194,111 +292,65 @@ input {
     text-shadow: 2px 2px 8px #000;
 }
 
+
+
 @media all and (min-width: 1201px) {
-  .col-4 {
-    width: 33.33%;
-  }
-
-  /*
-  NEVILLE: to uncomment;
-  .characterText {
-    font-size: 1em;
-    width: 49%;
-    text-align: right;
-    right: .5em;
-    top: 3.4em;
-  }
-  */
-}
-
-/*@media all (max-width: 1200px) and (min-width: 1001px) {
-  .col-4 {
-    width: 33.33%;
-  }
-
-  .characterText {
-    font-size: 1em;
-    width: 49%;
-    text-align: right;
-    right: .5em;
-    top: 3.4em;
-  }
-}*/
-@media all and (min-width: 1101px) {
-
   .col-4 {
     width: 33%;
   }
 
- /*
-  NEVILLE: to uncomment;
-.characterText {
-    font-size: 1.2em;
-    width: 52%;
-    right: .5em;
-    top: 3.8em;
-    font-weight: bold;
-    line-height: 1em;
+  .cardBackground {
+    max-width: 460px;
   }
-  */
+  
+  .characterText {
+    margin-left: 13em;
+  } 
 }
 
+@media all and (max-width: 1200px) and (min-width: 901px) {
+  .col-4 {
+    width: 33%;
+  } 
 
 
-@media all and (max-width: 1101px) and (min-width: 901px) {
+}
+
+@media all and (max-width: 1199px) and (min-width: 728px) {
   .col-4 {
     width: 50%;
   }
 
-/*
-  NEVILLE: to uncomment;
-.characterText {
-    font-size: 1.2em;
-    width: 52%;
-    right: .5em;
-    top: 3.8em;
-    font-weight: bold;
-    line-height: 1em;
+  .characterText {
+    margin-left: 12em;
   }
-  */
 }
 
-@media all and (max-width: 900px) and (min-width: 570px) {
-  .col-4 {
-    width: 50%;
+@media all and (max-width: 727px) and (min-width: 505px) {
+  h1 {
+  font-size: 1.7em;
+  margin-top: .5em;
   }
-
-/*
-  NEVILLE: to uncomment;
-.characterText {
-    font-size: 1em;
-    width: 49%;
-    right: .5em;
-    top: 3.8em;
-    font-weight: bold;
-    line-height: 1em;
-  }
-*/
 }
 
 
-@media all and (max-width: 569px) and (min-width: 400px) {
+@media all and (max-width: 504px) and (min-width: 360px) {
   .col-4 {
     width: 100%;
   }
 
   h1 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-top: .7em;
   }
 
-/*
-  NEVILLE: to uncomment;
   .characterText {
-    font-size: 1em;
-    top: 3.5em;
+    margin-left: 12em;
   }
-  */
+
+  .raceName {
+    padding-bottom: 0.3em;
+  }  
 }
 
 

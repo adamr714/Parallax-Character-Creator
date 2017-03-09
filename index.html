@@ -8,7 +8,7 @@
 	
 	<!-- Normalize CSS -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="css/float-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/float-grid.css">	
 	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Cinzel:400,900" rel="stylesheet">
@@ -52,128 +52,106 @@
 		<div id="raceSelector">
 			<div class="row">
 				<div class="col-4">
-					<div class="cardBackground" style="background-image: url(img/Parchement_BKG.png);background-size:cover;">
-						<div class="character" style="background-image: url(img/cayad_art.png);background-repeat:no-repeat; background-attachment: left bottom">
-							<div class="cardContent">
-								<div class="raceName" style="background-image: url(img/cayad_top.png);background-size:100% 100%;">Cayad</div>
-
-								<div class="characterText">
+					<div class="cardBackground">
+						<div class="raceName cayadTop">Cayad</div>
+						<div class="cayadArt">
+							<div class="cardContent characterText" style="padding-top:2.6em;">
 								A dark and blood-thirsty faction, which seeks revenge for the chaos caused by the great split.
-								</div>
 							</div>
 						</div>
-
-						<div class="row center">
+						<div class="cayadBottom">&nbsp;</div>
+						<div class="row center grey">
 							<input class="myButton" type="submit" value="Read More" id="cayadReadMore" />
 							<input class="myButton" type="submit" value="Create" id="cayadCardCreator" />
 						</div>
 					</div>
-				<!--
-					<div class="cardBackground">
-						<div class="cardContent cayadBKG">
-							<div class="raceName">Cayad</div>
-
-							<div class="characterText">
-							A dark and blood-thirsty faction, which seeks revenge for the chaos caused by the great split.
-							</div>
-						</div>
-
-						<div class="row center">
-							<input class="myButton" type="submit" value="Read More" id="cayadReadMore" />
-							<input class="myButton" type="submit" value="Create" id="cayadCardCreator" />
-						</div>
-					</div>
-					-->
 				</div>
-				
+
+
 				<div class="col-4">
 					<div class="cardBackground">
-						<div class="cardContent devoidBKG">
-							<div class="raceName">Devoid</div>
-							<div class="characterText">
-							   The Devoid focus on their ingenuity and engineering to maintain their way of life.
+						<div class="raceName devoidTop">Devoid</div>
+						<div class="devoidArt">
+							<div class="cardContent characterText" style="padding-top:2.6em;">
+								 The Devoid focus on their ingenuity and engineering to maintain their way of life.
 							</div>
-						</div>	
-
-						<div class="row center">
+						</div>
+						<div class="devoidBottom">&nbsp;</div>
+						<div class="row center grey">
 							<input class="myButton" type="submit" value="Read More" id="devoidReadMore" />
-							<input class="myButton" type="submit" value="Create" id="" />
+							<input class="myButton" type="submit" value="Create" id="devoidCardCreator" />
 						</div>
 					</div>
 				</div>
 
+
 				<div class="col-4">
 					<div class="cardBackground">
-						<div class="cardContent hadjenBKG">
-							<div class="raceName">Hadjen</div>
-
-							<div class="characterText">
-							The self-appointed lords of Magic who will protect their world at all costs.
+						<div class="raceName hadjenTop">Hadjen</div>
+						<div class="hadjenArt">
+							<div class="cardContent characterText" style="padding-top:2.6em;">
+								 The self-appointed lords of Magic who will protect their world at all costs.
 							</div>
 						</div>
-
-						<div class="row center">
-							<input class="myButton" type="submit" value="Read More" id="hadjenReadMore" />					
-							<input class="myButton" type="submit" value="Create" id="" />
+						<div class="hadjenBottom">&nbsp;</div>
+						<div class="row center grey">
+							<input class="myButton" type="submit" value="Read More" id="hadjenReadMore" />
+							<input class="myButton" type="submit" value="Create" id="hadjenCardCreator" />
 						</div>
 					</div>
 				</div>
-			<!-- </div> -->
 
-			<!-- <div class="row"> -->
+
 				<div class="col-4">
 					<div class="cardBackground">
-						<div class="cardContent minotaurBKG">
-							<div class="raceName">Minotaur</div>
-
-							<div class="characterText">
-								A proud race of warriors who live by a code of honor. 
+						<div class="raceName minotaurTop">Minotaur</div>
+						<div class="minotaurArt">
+							<div class="cardContent characterText" style="padding-top:2.6em;">
+								 A proud race of warriors who live by a code of honor. 
 							</div>
 						</div>
-
-						<div class="row center">
+						<div class="minotaurBottom">&nbsp;</div>
+						<div class="row center grey">
 							<input class="myButton" type="submit" value="Read More" id="minotaurReadMore" />
-							<input class="myButton" type="submit" value="Create" id="" />		
-
-						</div>						
+							<input class="myButton" type="submit" value="Create" id="minotaurCardCreator" />
+						</div>
 					</div>
 				</div>
-				
+
+
 				<div class="col-4">
 					<div class="cardBackground">
-						<div class="cardContent sicariusBKG">
-							<div class="raceName">Sicarius</div>
-
-							<div class="characterText">
-							Brooding and superstitious, the slightest glimpse of them usually meant a painful and torturous death. 
+						<div class="raceName sicariusTop">Sicarius</div>
+						<div class="sicariusArt">
+							<div class="cardContent characterText" style="padding-top:2.6em;">
+								 Brooding and superstitious, the slightest glimpse of them usually meant a painful and torturous death. 
 							</div>
 						</div>
-
-						<div class="row center">
+						<div class="sicariusBottom">&nbsp;</div>
+						<div class="row center grey">
 							<input class="myButton" type="submit" value="Read More" id="sicariusReadMore" />
-							<input class="myButton" type="submit" value="Create" id="" />					
+							<input class="myButton" type="submit" value="Create" id="sicariusCardCreator" />
 						</div>
 					</div>
 				</div>
 
+
 				<div class="col-4">
 					<div class="cardBackground">
-						<div class="cardContent tirBKG">
-							<div class="raceName">Tir</div>
-
-							<div class="characterText">
+						<div class="raceName tirTop">Tir</div>
+						<div class="tirArt">
+							<div class="cardContent characterText" style="padding-top:2.6em;">
 							Humans which posses magical talents that are highly sought after by other races.
 							</div>
 						</div>
-						
-						<div class="row center">
-							<input class="myButton" type="submit" value="Read More" id="tirReadMore" />			
-							<input class="myButton" type="submit" value="Create" id="" />		
+						<div class="tirBottom">&nbsp;</div>
+						<div class="row center grey">
+							<input class="myButton" type="submit" value="Read More" id="tirReadMore" />
+							<input class="myButton" type="submit" value="Create" id="tirCardCreator" />
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+				
 
 		<div class="hidden" id="caaydCreator">
 			<div class="row">
