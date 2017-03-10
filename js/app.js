@@ -7,7 +7,7 @@ var raceChoice = {
 			text: 'A dark and blood-thirsty faction, which seeks revenge for the chaos caused by the great split.',
 			cardBottom: 'cayadBottom',
             readMore: 'cayadReadMore',
-            create: 'caaydCreator',
+            create: 'cayadCreator',
         	},
         	{
     		cardTop: 'devoidTop',
@@ -30,7 +30,7 @@ var raceChoice = {
         	{
     		cardTop: 'minotaurTop',
 			raceName: 'Minotaur',
-			cardArt: 'minoataurArt',
+			cardArt: 'minotaurArt',
 			text: 'A proud race of warriors who live by a code of honor.',
 			cardBottom: 'minotaurBottom',
             readMore: 'cayadReadMore',
@@ -46,39 +46,44 @@ var raceChoice = {
             create: 'caaydCreator',
         	},
         	{
-    		cardTop: 'tiTop',
+    		cardTop: 'tirTop',
 			raceName: 'Tir',
 			cardArt: 'tirArt',
 			text: 'Humans which posses magical talents that are highly sought after by other races.',
-			cardBottom: 'torBottom',
+			cardBottom: 'tirBottom',
             readMore: 'cayadReadMore',
-            create: 'caaydCreator',
+            create: 'cayadCreator',
         	}
     ],
     currentCard: 0,
 }		
 
 // Render Function
-var renderList = function(element) {
-    // debugger;
+var renderList = function() {
+	var characterCards = $('#characterCardsContainer');
+	characterCards.empty();
 
-    var currentCard = raceChoice.state[raceChoice.currentCard];
+	for (var i=0; i < raceChoice.state.length; i++) {
+		var currentCard = raceChoice.state[i];
 
-    var infoCard = $('#character').html()
-        .replace('{{cardTop}}', currentCard.cardTop)
-        .replace('{{raceName}}', currentCard.raceName)
-        .replace('{{cardArt}}', currentCard.cardArt)
-        .replace('{{text}}', currentCard.text)
-        .replace('{{cardBottom}}', currentCard.cardBottom)
-        .replace('{{readmMore}}', currentCard.readmMore)
-        .replace('{{create}}', currentCard.create)
-    element.html(infoCard);
+	    var infoCard = $('#character').html()
+	        .replace('{{cardTop}}', currentCard.cardTop)
+	        .replace('{{raceName}}', currentCard.raceName)
+	        .replace('{{cardArt}}', currentCard.cardArt)
+	        .replace('{{text}}', currentCard.text)
+	        .replace('{{cardBottom}}', currentCard.cardBottom)
+	        .replace('{{readmMore}}', currentCard.readmMore)
+	        .replace('{{create}}', currentCard.create)
+	    characterCards.append(infoCard);
+
+
+		$('#'+currentCard.create).click(function() {
+			$('#raceSelector').fadeOut(1000, function() {
+				$('#characterCreator').show();
+			});
+		});
+	}   
 };
-
-
-
-
-
 
 
 // Data
@@ -148,25 +153,21 @@ var shield = [
 
 // Functions and inner workings
 
-$('#info').click(function() {
-	$('#intro').toggleClass('hidden');
-});
 
 
-$('#cayadCardCreator').click(function() {
-	$('#raceSelector').fadeOut(1000, function() {
-		$('#caaydCreator').removeClass('hidden');
-	});
-});
 
-$('#cayadCardCreator').click(function() {
-	$('#info').fadeOut('hidden');
-});
+
 
 $(document).ready(function() {
 	$('.tooltip').tooltipster();
 
+	$('#info').click(function() {
+		$('#intro').toggleClass('hidden');
+	});
+
 	$('#templates').load('template.html', function() {
 		console.log($('#character').html());
+
+	renderList();	
 	});	
 });
