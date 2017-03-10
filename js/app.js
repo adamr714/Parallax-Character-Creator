@@ -1,48 +1,85 @@
 //Cards - Homepage
 var raceChoice = {
     state: [{
-            cardBackgorund: 'cayadBKG',
-            raceName: 'Cayad',
-            text: 'A dark and blood-thirsty faction, which seeks revenge for the chaos caused by the great split',
+    		cardTop: 'cayadTop',
+			raceName: 'Cayad',
+			cardArt: 'cayadArt',
+			text: 'A dark and blood-thirsty faction, which seeks revenge for the chaos caused by the great split.',
+			cardBottom: 'cayadBottom',
             readMore: 'cayadReadMore',
             create: 'caaydCreator',
         	},
         	{
-			cardBackgorund: 'devoidBKG',
-            raceName: 'Devoid',
-            text: 'The Devoid focus on their ingenuity and engineering to maintain their way of life.',
-        	readMore: 'devoidReadMore',
-            create: 'devoidCreator',
+    		cardTop: 'devoidTop',
+			raceName: 'Devoid',
+			cardArt: 'devoidArt',
+			text: 'The Devoid focus on their ingenuity and engineering to maintain their way of life.',
+			cardBottom: 'devoidBottom',
+            readMore: 'cayadReadMore',
+            create: 'caaydCreator',
         	},
         	{
-			cardBackgorund: 'hadjenBKG',
-            raceName: 'Hadjen',
-            text: 'The self-appointed lords of Magic who will protect their world at all costs.',
-            readMore: 'hadjenReadMore',
-            create: 'hadjenCreator',
+    		cardTop: 'hadjenTop',
+			raceName: 'Hadjen',
+			cardArt: 'hadjenArt',
+			text: 'The self-appointed lords of Magic who will protect their world at all costs.',
+			cardBottom: 'hadjenBottom',
+            readMore: 'cayadReadMore',
+            create: 'caaydCreator',
         	},
         	{
-			cardBackgorund: 'minotaurBKG',
-            raceName: 'Minotaur',
-            text: 'A proud race of warriors who live by a code of honor.',
-            readMore: 'minotaurReadMore',
-            create: 'minotaurCreator',
+    		cardTop: 'minotaurTop',
+			raceName: 'Minotaur',
+			cardArt: 'minoataurArt',
+			text: 'A proud race of warriors who live by a code of honor.',
+			cardBottom: 'minotaurBottom',
+            readMore: 'cayadReadMore',
+            create: 'caaydCreator',
         	},
         	{
-			cardBackgorund: 'sicariusBKG',
-            raceName: 'Sicarius',
-            text: 'Brooding and superstitious, the slightest glimpse of them usually meant a painful and torturous death.',
-			readMore: 'sicariusReadMore',
-            create: 'sicariusCreator',
+    		cardTop: 'sicariusTop',
+			raceName: 'Sicarius',
+			cardArt: 'sicariusArt',
+			text: 'Brooding and superstitious, the slightest glimpse of them usually meant a painful and torturous death.',
+			cardBottom: 'sicariusBottom',
+            readMore: 'cayadReadMore',
+            create: 'caaydCreator',
         	},
         	{
-			cardBackgorund: 'tirBKG',
-            raceName: 'Tir',
-            text: 'Humans which posses magical talents that are highly sought after by other races.',
-            readMore: 'tirReadMore',
-            create: 'tirCreator',
-    }]
-}
+    		cardTop: 'tiTop',
+			raceName: 'Tir',
+			cardArt: 'tirArt',
+			text: 'Humans which posses magical talents that are highly sought after by other races.',
+			cardBottom: 'torBottom',
+            readMore: 'cayadReadMore',
+            create: 'caaydCreator',
+        	}
+    ],
+    currentCard: 0,
+}		
+
+// Render Function
+var renderList = function(element) {
+    // debugger;
+
+    var currentCard = raceChoice.state[raceChoice.currentCard];
+
+    var infoCard = $('#character').html()
+        .replace('{{cardTop}}', currentCard.cardTop)
+        .replace('{{raceName}}', currentCard.raceName)
+        .replace('{{cardArt}}', currentCard.cardArt)
+        .replace('{{text}}', currentCard.text)
+        .replace('{{cardBottom}}', currentCard.cardBottom)
+        .replace('{{readmMore}}', currentCard.readmMore)
+        .replace('{{create}}', currentCard.create)
+    element.html(infoCard);
+};
+
+
+
+
+
+
 
 // Data
 var paths=[
@@ -128,6 +165,7 @@ $('#cayadCardCreator').click(function() {
 
 $(document).ready(function() {
 	$('.tooltip').tooltipster();
+
 	$('#templates').load('template.html', function() {
 		console.log($('#character').html());
 	});	
