@@ -56,12 +56,12 @@
 
 
 					<div class="tab">
-					 	<button class="tablinks" onclick="openCity(event, 'General')" id="defaultOpen"><img src="img/general_path.png"></button>
-					 	<button class="tablinks" onclick="openCity(event, 'BloodMagic')"><img src="img/bm_path.png"></button>
-					  	<button class="tablinks" onclick="openCity(event, 'Melee')"><img src="img/melee_path.png"></button>
-					    <button class="tablinks" onclick="openCity(event, 'PureMagic')"><img src="img/pm_path.png"></button>
-					    <button class="tablinks" onclick="openCity(event, 'Ranged')"><img src="img/ranged_path.png"></button>
-						<button class="tablinks" onclick="openCity(event, 'Subterfuge')"><img src="img/subterfuge_path.png"></button>
+					 	<button class="tablinks" onclick="openPath(event, 'General')" id="defaultOpen"><img src="img/general_path.png"></button>
+					 	<button class="tablinks" onclick="openPath(event, 'BloodMagic')"><img src="img/bm_path.png"></button>
+					  	<button class="tablinks" onclick="openPath(event, 'Melee')"><img src="img/melee_path.png"></button>
+					    <button class="tablinks" onclick="openPath(event, 'PureMagic')"><img src="img/pm_path.png"></button>
+					    <button class="tablinks" onclick="openPath(event, 'Ranged')"><img src="img/ranged_path.png"></button>
+						<button class="tablinks" onclick="openPath(event, 'Subterfuge')"><img src="img/subterfuge_path.png"></button>
 					</div>
 
 					<div id="General" class="tooltip tabcontent " title="General Skills">
@@ -90,7 +90,7 @@
 
 
 <script>
-function openCity(evt, cityName) {
+function openPath(evt, pathName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -100,7 +100,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(pathName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
