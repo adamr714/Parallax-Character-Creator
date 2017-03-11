@@ -34,9 +34,29 @@
     background-color: darkslategrey;
 }
 
+.attributePoints {
+    /* border: 1px solid white; */
+    height: 1.5em;
+    padding: 6.5px;
+    margin-top: -.5em;
+}
+
+.skillPoints {
+    padding: .1em .5em;
+    color: white;
+    border: 1px solid white;
+    background-color: darkslategrey;
+    font-size: 1.3em;
+}
+
 .clear {
     clear: both;
     margin: 0px;
+}
+
+.spTitle {
+    padding-top: 0.8em;
+    padding-bottom: -0.5em;
 }
 
 /*Tabs*/
