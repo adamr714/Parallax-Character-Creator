@@ -2,6 +2,7 @@ html, body {
   min-height:100%
 }
 
+
 h1 {
   /* text-align: center; */
   font-variant: small-caps;
@@ -32,10 +33,10 @@ body {
   font-family: 'Cinzel', sans-serif;
 }
 
-p {
+/*p {
     color: white;
     line-height: 1.6em;
-}
+}*/
 
 a {
     color: lightcyan;
@@ -131,10 +132,6 @@ input {
   height: .5em;
 }
 
-.form {
-  height: 100%;
-}
-
 /*Cayad Art*/
 .cayadTop {
   background-image: url(../img/cayad_top.png);
@@ -156,6 +153,11 @@ input {
    opacity:1
 }
 
+.cardLayout {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
 
 /*Devoid Art*/
 .devoidTop {
@@ -293,9 +295,8 @@ input {
 }
 
 
-
 @media all and (min-width: 1201px) {
-  .col-4 {
+  .cardLayout {
     width: 33%;
   }
 
@@ -309,7 +310,7 @@ input {
 }
 
 @media all and (max-width: 1200px) and (min-width: 901px) {
-  .col-4 {
+  .cardLayout {
     width: 33%;
   } 
 
@@ -317,7 +318,7 @@ input {
 }
 
 @media all and (max-width: 1199px) and (min-width: 728px) {
-  .col-4 {
+  .cardLayout {
     width: 50%;
   }
 
@@ -335,7 +336,7 @@ input {
 
 
 @media all and (max-width: 504px) and (min-width: 360px) {
-  .col-4 {
+  .cardLayout {
     width: 100%;
   }
 

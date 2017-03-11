@@ -151,7 +151,6 @@ var shield = [
 ]
 
 
-// Functions and inner workings
 
 
 

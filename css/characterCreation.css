@@ -1,0 +1,97 @@
+/*Character Creation Page*/
+.characterCreationSidebar {
+    float: left;
+    width: 40%;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #000;
+    min-width: 400px;
+    max-width: 400px;
+    margin-right: 2em;
+}
+.form {
+  float: left;
+  width: 66%
+}
+
+.attributePoints {
+  float: left;
+  margin-left: 1em;
+  color: white;
+  font-size: 1.2em;
+  width: 5.4em;
+  text-align: center;
+}
+
+.attributeNumber {
+    margin-top: .2em;
+    text-align: center;
+    font-size: 2em;
+    border: 1px solid white;
+    height: 1.5em;
+    padding: 6.5px;
+    background-color: darkslategrey;
+}
+
+.clear {
+    clear: both;
+    margin: 0px;
+}
+
+/*Tabs*/
+div.tab {
+    float: left;
+    /* border: 1px solid #ccc; */
+    background-color: darkslategrey;
+    width: 17%;
+    height: 300px;
+    clear: both;
+    margin-top: 0.5em;
+    /* font-family: 'Cinzel', sans-serif; */
+    box-shadow: 0px 0px 0px #000;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    padding: 6px 7px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Cinzel', sans-serif;
+    font-size: .8em;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #fff;
+    color: #000;
+    /* border: 1px solid #fff; */
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 313px;
+    margin-top: .462em;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background: white;
+    /* color: black; */
+    /* box-shadow: 2px 2px 8px #000; */
+}

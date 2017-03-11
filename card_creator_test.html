@@ -1,0 +1,132 @@
+<<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/float-grid.css">	
+	<!-- <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/characterCreation.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:400,900" rel="stylesheet">
+</head>
+<body>
+<!-- 			<div id="raceSelector">	
+			<div class="row" id="characterCardsContainer"></div>
+		</div> -->
+		
+		<div class="" id="characterCreator">
+			<div class="row">
+				<div class="col-12">
+					<h2>Cayad Creator</h2>
+				</div>				
+			</div>	
+
+			<div class="row">
+				<div class="characterCreationSidebar">
+					<div class="form">
+						<input id="#characterName" type="text" name="characterName" placeholder="Character Name">
+
+						<select id="#path"></select>
+
+						<select id="#form"></select>
+
+						<select id="#awareness"></select>
+
+						<select id="#essence"></select>
+
+						<select id="#weaponLeft"></select>
+
+						<select id="#weaponRight"></select>
+
+						<select id="#armor"></select>
+
+						<select id="#shield"></select>
+					</div>
+				
+					<div class="attributePoints">
+						Attribute Points:
+						<div class="attributeNumber" id="attributeNumber">
+						4
+						</div>
+					</div>
+
+					<!-- Tabs -->
+					<p class="clear">Skill Points:</p>
+
+
+					<div class="tab">
+					 	<button class="tablinks" onclick="openCity(event, 'General')" id="defaultOpen"><img src="img/general_path.png"></button>
+					 	<button class="tablinks" onclick="openCity(event, 'BloodMagic')"><img src="img/bm_path.png"></button>
+					  	<button class="tablinks" onclick="openCity(event, 'Melee')"><img src="img/melee_path.png"></button>
+					    <button class="tablinks" onclick="openCity(event, 'PureMagic')"><img src="img/pm_path.png"></button>
+					    <button class="tablinks" onclick="openCity(event, 'Ranged')"><img src="img/ranged_path.png"></button>
+						<button class="tablinks" onclick="openCity(event, 'Subterfuge')"><img src="img/subterfuge_path.png"></button>
+					</div>
+
+					<div id="General" class="tooltip tabcontent " title="General Skills">
+					  <p>General Skills</p>
+					</div>
+
+					<div id="BloodMagic" class="tabcontent">
+					  <p>Blood Magic Skills </p> 
+					</div>
+
+					<div id="Melee" class="tabcontent">
+					  <p>Melee Skills</p> 
+					</div>
+
+					<div id="PureMagic" class="tabcontent">
+					  <p>Pure Magic Skills  </p> 
+					</div>
+
+					<div id="Ranged" class="tabcontent">
+					  <p>Ranged Skills </p> 
+					</div>
+
+					<div id="Subterfuge" class="tabcontent">
+					  <p>Subterfuge Skills</p> 
+					</div>
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+				</div>
+
+				<div class="">
+					<img src="img/cayad_blank.png" class="cardCreation">
+					<div class="spacer"></div>
+
+					<img src="img/cayad_blank2.png" class="cardCreation">
+				</div>
+
+			</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+
+
+<!-- 	<script type="text/javascript" src="tabs/app.js"></script>	
+ -->	<!-- <div id="templates"></div> --> <!--Loader -->
+
+	</main>
+</body>
+</html>
