@@ -33,11 +33,6 @@ body {
   font-family: 'Cinzel', sans-serif;
 }
 
-/*p {
-    color: white;
-    line-height: 1.6em;
-}*/
-
 a {
     color: lightcyan;
     font-size: 1.3em;
@@ -92,7 +87,7 @@ input {
     max-width: 440px;
     background-image: url(../img/Parchement_BKG.png);
     background-size:cover;
-    opacity: .9;
+    opacity: 1.0;
 }
 
 .myButton {

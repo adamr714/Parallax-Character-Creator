@@ -56,9 +56,9 @@
 
 
 					<div class="tab">
-					 	<button class="tablinks" onclick="openPath(event, 'General')" id="defaultOpen"><img src="img/general_path.png"></button>
+					 	<button class="tablinks" onclick="openPath(event, 'General')"><img src="img/general_path.png"></button>
 					 	<button class="tablinks" onclick="openPath(event, 'BloodMagic')"><img src="img/bm_path.png"></button>
-					  	<button class="tablinks" onclick="openPath(event, 'Melee')"><img src="img/melee_path.png"></button>
+					  	<button class="tablinks" onclick="openPath(event, 'Melee')" id="defaultOpen"><img src="img/melee_path.png"></button>
 					    <button class="tablinks" onclick="openPath(event, 'PureMagic')"><img src="img/pm_path.png"></button>
 					    <button class="tablinks" onclick="openPath(event, 'Ranged')"><img src="img/ranged_path.png"></button>
 						<button class="tablinks" onclick="openPath(event, 'Subterfuge')"><img src="img/subterfuge_path.png"></button>
@@ -88,31 +88,46 @@
 					  <p>Subterfuge Skills</p> 
 					</div>
 
-
-<script>
-function openPath(evt, pathName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(pathName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-
-
 				</div>
 
-				<div class="">
+				<div class="" id="characterCreatorCard">
+					<div id="cardCreatorLayout" class="cardCreatorLayout">
+							<div class="cardCreatorBackground">
+								<div class="raceName creatorCayadTop"></div>
+									<div class="characterName" id="characterName">{{raceName}}
+
+								</div>
+								<div class="creatorCayadArt">
+									<div class="cardCreatorContent text"></div>
+									<div class="statContainer">
+										<div class="statsLabels">Mv</div>
+										<div class="statsLabels">Ml</div>
+										<div class="statsLabels">Rg</div>
+										<div class="statsLabels">Df</div>
+										<div class="statsLabels">Ar</div>
+										<div class="statsLabels">In</div>
+										<div class="statsLabels">Ep</div>
+									</div>
+									<div class="statNumbers">
+	 									<div class="statsLabelsBlack" id="mv">{{Mv}}</div>
+										<div class="statsLabelsBlack" id="ml">{{Ml}}</div>
+										<div class="statsLabelsBlack" id="rg">{{Rg}}</div>
+										<div class="statsLabelsBlack" id="df">{{Df}}</div>
+										<div class="statsLabelsBlack" id="ar">{{Ar}}</div>
+										<div class="statsLabelsBlack" id="in">{{In}}</div>
+										<div class="statsLabelsBlack" id="ep">{{Ep}}</div>
+									</div>
+									<div class="attributes"></div>
+									<div class="weapons"></div>
+								</div>
+								<div class="creatorCayadBottom">&nbsp;</div>
+							</div>
+					</div>
+				</div>
+
+				<div>
 					<img src="img/cayad_blank.png" class="cardCreation">
+
 					<div class="spacer"></div>
 
 					<img src="img/cayad_blank2.png" class="cardCreation">
@@ -122,10 +137,10 @@ document.getElementById("defaultOpen").click();
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+	<script type="text/javascript" src="js/tabs.js"></script>
 
 
-<!-- 	<script type="text/javascript" src="tabs/app.js"></script>	
- -->	<!-- <div id="templates"></div> --> <!--Loader -->
+	<!-- <div id="templates"></div> --> <!--Loader -->
 
 	</main>
 </body>

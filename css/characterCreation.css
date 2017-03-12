@@ -49,6 +49,72 @@
     font-size: 1.3em;
 }
 
+.statContainer {
+    display: block;
+    position: absolute;
+    width: 65%;
+    margin-left: 14em;
+    height: 2.5em;
+    background-color: white;
+    margin-top: -20em;
+    background-image: linear-gradient(to right, #005A42, darkolivegreen, #005A42);
+}
+
+.statNumbers {
+    display: block;
+    position: absolute;
+    width: 65%;
+    margin-left: 14em;
+    height: 2.5em;
+    background-color: white;
+    margin-top: -17.5em;
+}
+
+.statsLabels {
+    float: left;
+    border: .5px solid #000;
+    width: 14.28%;
+    height: 2.1em;
+    text-align: center;
+    padding-top: .4em;
+    color: white;
+    font-size: 1.2em;
+    font-variant: small-caps;
+}
+
+.statsLabelsBlack {
+    float: left;
+    border: .5px solid #000;
+    width: 14.28%;
+    height: 2.1em;
+    text-align: center;
+    padding-top: .4em;
+    font-size: 1.2em;
+}
+
+.statPlaceholerNumbers {
+    float: left;
+    border: .5px solid #000;
+    width: 14.2%;
+    height: 2.1em;
+    text-align: center;
+    padding-top: .4em;
+    color: white;
+    font-size: 1.2em;
+    font-variant: small-caps;
+}
+
+.statsLabelNumbers {
+    float: left;
+    border: .5px solid #000;
+    width: 14.2%;
+    height: 2.1em;
+    text-align: center;
+    padding-top: .4em;
+    color: black;
+    font-size: 1.2em;
+    font-variant: small-caps;
+}
 .clear {
     clear: both;
     margin: 0px;
@@ -58,6 +124,57 @@
     padding-top: 0.8em;
     padding-bottom: -0.5em;
 }
+
+.cardCreatorContent {
+  min-height: 23em;
+  background-size: cover;
+}
+.cardCreatorBackground {
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 8px #000;
+    background-color: darkslategrey;
+    min-width: 45em;
+    min-height: 25em;
+    background-image: url(../img/Parchement_BKG.png);
+    background-size:cover;
+    position: relative;
+}
+
+.creatorCayadArt {
+  background-image: url(../img/cayad_large_art.png);
+  background-repeat:no-repeat; 
+  background-position: left bottom;
+  margin-top:-2.6em;
+  margin-bottom:-2.5em;
+}
+
+.cardCreatorLayout {
+  float: left;
+  max-width: 70%;
+}
+
+.characterName {
+    font-size: 2.2em;
+    color: white;
+    font-weight: bold;
+    margin-top: -1.8em;
+    margin-left: .5em;
+}
+
+/*Race Specific Art*/
+.creatorCayadTop {
+    background-image: url(../img/cayad_top.png);
+    background-size: 100% 100%;
+    height: 2.3em;
+}
+
+.creatorCayadBottom {
+    background-image: url(../img/cayad_bottom.png);
+    background-size: 100% 100%;
+    height: 4.3em;
+}
+
+
 
 /*Tabs*/
 div.tab {
