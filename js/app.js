@@ -117,9 +117,9 @@ var essence =[
 
 var movement = 5;
 
-var mellee = 3;
+var melee = 3;
 
-var armor  = 1;
+var armorValue  = 1;
 
 var ranged = 1;
 
@@ -150,6 +150,37 @@ var shield = [
 	"kite shielf"
 ]
 
+// $('#mv').replaceWith(movement);
+
+
+// function replaceStats() {
+//         $('#ml').replaceWith(melee);
+//         $('#ar').replaceWith(armor);
+//         $('#rg').replaceWith(ranged);
+// }
+
+// replaceStats();
+
+
+// Tabs - Start
+function openPath(evt, pathName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(pathName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+// Tabs - End
+
+ 
 
 
 
@@ -168,5 +199,8 @@ $(document).ready(function() {
 		console.log($('#character').html());
 
 	renderList();	
+
+
+
 	});	
 });
