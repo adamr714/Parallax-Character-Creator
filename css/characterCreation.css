@@ -150,7 +150,8 @@
 
 .cardCreatorLayout {
   float: left;
-  max-width: 70%;
+  max-width: 44%;
+  margin-bottom: 1.5em;
 }
 
 .characterName {
@@ -290,6 +291,18 @@
     width: 20.00%;
 }
 
+.skillDescriptions {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 1em;
+    max-height: 95%;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    column-gap: 20px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+}
 
 /*Tabs*/
 div.tab {
