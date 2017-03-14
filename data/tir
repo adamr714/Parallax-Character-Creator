@@ -1,0 +1,39 @@
+[
+	{
+		"Form": [2,3,4],
+		"Awareness": [2,3,4,5],
+		"Essence":[4,5,6],
+		"Movement": 4,
+		"Melee": 1,
+		"Armor": 0,
+		"Ranged": 2,
+		"skillPoints":8,
+		"attributePoints":5,
+		"Paths": [
+			{
+				"name":"Blood Magic",
+				"bonusStat": "EP",
+				"bonusNumber": 1,
+				"primaryStat": "Essence"
+			},			
+			{
+				"name":"Ranged",
+				"bonusStat": "Ranged",
+				"bonusNumber": 1,
+				"primaryStat": "Awareness"
+			},
+			{
+				"name":"Subterfuge",
+				"bonusStat": "Defense",
+				"bonusNumber": 1,
+				"primaryStat": "Awareness"
+			},
+			{
+				"name":"Pure Magic",
+				"bonusStat": "Essence",
+				"bonusNumber": 1,
+				"primaryStat": "Essence"
+			}
+		]
+	}
+]

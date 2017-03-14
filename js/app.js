@@ -123,21 +123,9 @@ var armorValue  = 1;
 
 var ranged = 1;
 
-var weapons=[
-  "Select Weapon",
-  "dagger",
-  "spear",
-  "claymore",
-  "great axe",
-  "great sword",
-  "maul",
-  "hand axe",
-  "rapier",
-  "short sword",
-  "axe",
-  "halberd",
-  "long sword"
-]
+var attributePoints = 4;
+
+var skillPoints = 6; 
 
 var armor = [
 	"cloth",
@@ -150,16 +138,17 @@ var shield = [
 	"kite shielf"
 ]
 
-// $('#mv').replaceWith(movement);
 
+function replaceStats() {
+		$('#mv').text(movement);
+        $('#ml').text(melee);
+        $('#ar').text(armorValue);
+        $('#rg').text(ranged);
+        $('#attributeNumber').text(attributePoints);
+        $('#skillNumber').text(skillPoints);
+}
 
-// function replaceStats() {
-//         $('#ml').replaceWith(melee);
-//         $('#ar').replaceWith(armor);
-//         $('#rg').replaceWith(ranged);
-// }
-
-// replaceStats();
+replaceStats();
 
 
 
