@@ -86,69 +86,20 @@ var renderList = function() {
 };
 
 
-// Data
-var paths=[
-	"Blood Magic",
-	"Ranged",
-	"Melee"
-]
-
-var form =[
-	"3",
-	"4",
-	"5",
-	"6",
-	"7"
-]
-
-var awareness =[
-	"3",
-	"4",
-	"5"
-]
-
-var essence =[
-	"2",
-	"3",
-	"4",
-	"5",
-	"6"
-]
-
-var movement = 5;
-
-var melee = 3;
-
-var armorValue  = 1;
-
-var ranged = 1;
-
-var attributePoints = 4;
-
-var skillPoints = 6; 
-
-var armor = [
-	"cloth",
-	"leather",
-	"chainmail"
-]
-
-var shield = [
-	"buckler",
-	"kite shielf"
-]
 
 
-function replaceStats() {
-		$('#mv').text(movement);
-        $('#ml').text(melee);
-        $('#ar').text(armorValue);
-        $('#rg').text(ranged);
-        $('#attributeNumber').text(attributePoints);
-        $('#skillNumber').text(skillPoints);
-}
 
-replaceStats();
+
+// function replaceStats() {
+// 		$('#mv').text(movement);
+//         $('#ml').text(melee);
+//         $('#ar').text(armorValue);
+//         $('#rg').text(ranged);
+//         $('#attributeNumber').text(attributePoints);
+//         $('#skillNumber').text(skillPoints);
+// }
+
+// replaceStats();
 
 
 
@@ -172,7 +123,15 @@ $(document).ready(function() {
 
 	renderList();	
 
+	function doStuff()
+	{
+	var nameElement = document.getElementById("characterNameDefined");
+	var theName = nameElement.value;
+	document.getElementById("CharacterName").innerHTML += theName;
+	console.log(theName);
+	}
 
+	doStuff();
 
 	});	
 });

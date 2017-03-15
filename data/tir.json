@@ -1,5 +1,6 @@
 [
 	{
+		"Type": "Tir",
 		"Form": [2,3,4],
 		"Awareness": [2,3,4,5],
 		"Essence":[4,5,6],
