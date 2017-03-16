@@ -1,4 +1,7 @@
 //Cards - Homepage
+var weapons;
+var cayad;
+
 var raceChoice = {
     state: [{
     		cardTop: 'cayadTop',
@@ -85,33 +88,55 @@ var renderList = function() {
 	}   
 };
 
+var inputBox = document.getElementById('chatinput');
 
-
-
-
-
-// function replaceStats() {
-// 		$('#mv').text(movement);
-//         $('#ml').text(melee);
-//         $('#ar').text(armorValue);
-//         $('#rg').text(ranged);
-//         $('#attributeNumber').text(attributePoints);
-//         $('#skillNumber').text(skillPoints);
-// }
-
-// replaceStats();
-
-
-
- 
-
-
-
-
+inputBox.onkeyup = function(){
+    document.getElementById('printchatbox').innerHTML = inputBox.value;
+}
 
 
 
 $(document).ready(function() {
+	http.get("data/weapons.json",function(data){
+		weapons=data;
+	});
+
+	http.get("data/cayad.json",function(data){
+		cayad=data;
+
+		//Temp Variable Numbers
+		var minForm = cayad[0].Form[0];
+		var minAwareness = cayad[0].Awareness[0];
+		var minEssence = cayad[0].Essence[0];
+		console.log(cayad[0].length);		
+
+		function replaceStats(race) {
+			$('#mv').text(race[0].Movement);//Movement
+			$('#ml').text(race[0].Melee);//Melee
+			$('#rg').text(race[0].Ranged);//Ranged
+			$('#df').text(Math.ceil((minForm+minAwareness)/2));//Defense
+			$('#ar').text(race[0].Armor);//Armor
+			$('#in').text(Math.ceil((minAwareness+minEssence)/2));//Initiative
+			$('#ep').text(Math.ceil((minForm+minAwareness+minEssence)/3));//Exhaustion
+			$('#skillNumber').text(race[0].skillPoints)//Skill Points
+			$('#attributeNumber').text(race[0].attributePoints)	//Attribute Points
+			$('#renown').text(race[0].renown)//Renown
+		}
+
+		replaceStats(cayad);
+
+		// var formDiceBlack = "<div class='dice'>"
+		// for(var i = 0; i < form; i++) {	
+		// 	$('formDice').text(
+		// 		formDiceBlack += "<img src="img/black.png">"
+		// 	);
+		// 	formDiceBlack += "</div>"
+		// };	
+
+	});
+
+
+
 	$('.tooltip').tooltipster();
 
 	$('#info').click(function() {
@@ -121,17 +146,8 @@ $(document).ready(function() {
 	$('#templates').load('template.html', function() {
 		console.log($('#character').html());
 
-	renderList();	
+	renderList();
 
-	function doStuff()
-	{
-	var nameElement = document.getElementById("characterNameDefined");
-	var theName = nameElement.value;
-	document.getElementById("CharacterName").innerHTML += theName;
-	console.log(theName);
-	}
-
-	doStuff();
 
 	});	
 });

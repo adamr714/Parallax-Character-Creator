@@ -24,7 +24,7 @@
       <div class="row">
          <div class="characterCreationSidebar">
             <div class="form">
-               <input id="characterNameDefined" type="text" name="characterName" placeholder="Character Name">
+               <input id="chatinput" type="text" name="characterName" placeholder="Character Name">
                <select id="#path"></select>
                <select id="#form"></select>
                <select id="#awareness"></select>
@@ -73,7 +73,7 @@
             <div id="cardCreatorLayout" class="cardCreatorLayout">
                <div class="cardCreatorBackground">
                   <div class="raceName creatorCayadTop"></div>
-                  <div class="characterName" id="characterName">Character Name
+                  <div class="characterName" id="printchatbox">Character Name
                   </div>
                   <div class="creatorCayadArt">
                      <div class="cardCreatorContent text"></div>
@@ -98,43 +98,23 @@
                      <div class="attributes">
                         <div class="formAttribute" id="formAttribute">
                            <div>Form</div>
-                           <div class="attribute internal">
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
+                           <div class="attribute internal" id="formDice">
+                              <!-- <div class="dice hidden"><img src="img/black.png"></div>-->
+    
                            </div>
                         </div>
                         <div class="line"></div>
                         <div class="awarenessAttribute" id="awarenessAttribute">
                            <div>Awareness</div>
-                           <div class="attribute internal">
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
+                           <div class="attribute internal" id="awarenessDice">
+
                            </div>
                         </div>
                         <div class="line"></div>
                         <div class="essenceAttribute" id="essenceAttribute">
                            <div>Essence</div>
-                           <div class="attribute internal">
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
-                              <div class="dice"><img src="img/black.png"></div>
+                           <div class="attribute internal" id="essenceDice">
+
                            </div>
                         </div>
                         
@@ -190,6 +170,7 @@
       <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
       <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
       <script type="text/javascript" src="js/app.js"></script> 
+      <script type="text/javascript" src="js/http.js"></script>
       <script type="text/javascript" src="js/tabs.js"></script> 
       <!-- <div id="templates"></div> --> <!--Loader -->
       </main>
