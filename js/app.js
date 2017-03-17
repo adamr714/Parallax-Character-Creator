@@ -1,6 +1,12 @@
 //Cards - Homepage
 var weapons;
 var cayad;
+var armor;
+var shield;
+var weaponItems= "";
+var armorItems = "";
+var shieldItems = "";
+
 
 var raceChoice = {
     state: [{
@@ -88,27 +94,60 @@ var renderList = function() {
 	}   
 };
 
-var inputBox = document.getElementById('chatinput');
+var inputBox = document.getElementById('cardName');
 
 inputBox.onkeyup = function(){
-    document.getElementById('printchatbox').innerHTML = inputBox.value;
+    document.getElementById('printCardName').innerHTML = inputBox.value;
 }
 
 
-
 $(document).ready(function() {
+
+// Weapon JSON
 	http.get("data/weapons.json",function(data){
 		weapons=data;
-	});
+		console.log(weapons.length);
+		console.log(weapons[0].name);
 
+    
+    for (var i = 0; i < weapons.length; i++){
+        weaponItems+= "<option value='" + i + "'>" +
+          weapons[i].name + "</option>";
+	}	
+      $("#weaponLeft").html(weaponItems);
+ 	  $("#weaponRight").html(weaponItems);
+
+    });
+
+//Armor
+	http.get("data/armor.json",function(data){
+		armor = data;
+	   for (var i = 0; i < armor.length; i++) {
+	        armorItems+= "<option value='" + i + "'>" +
+	          armor[i].name + "</option>";
+		}	
+      $("#armor").html(armorItems);
+    });
+
+//Shield
+	http.get("data/shield.json",function(data){
+		shield = data;
+	   for (var i = 0; i < shield.length; i++) {
+	        shieldItems+= "<option value='" + i + "'>" +
+	          shield[i].name + "</option>";
+		}	
+      $("#shield").html(shieldItems);
+    });
+
+
+// Cayad JSON
 	http.get("data/cayad.json",function(data){
 		cayad=data;
 
 		//Temp Variable Numbers
 		var minForm = cayad[0].Form[0];
 		var minAwareness = cayad[0].Awareness[0];
-		var minEssence = cayad[0].Essence[0];
-		console.log(cayad[0].length);		
+		var minEssence = cayad[0].Essence[0];		
 
 		function replaceStats(race) {
 			$('#mv').text(race[0].Movement);//Movement
@@ -125,13 +164,7 @@ $(document).ready(function() {
 
 		replaceStats(cayad);
 
-		// var formDiceBlack = "<div class='dice'>"
-		// for(var i = 0; i < form; i++) {	
-		// 	$('formDice').text(
-		// 		formDiceBlack += "<img src="img/black.png">"
-		// 	);
-		// 	formDiceBlack += "</div>"
-		// };	
+
 
 	});
 
