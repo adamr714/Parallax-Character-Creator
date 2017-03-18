@@ -1,4 +1,11 @@
 [{
+	"name": "Choose Armor",
+	"armorValue": 0,
+	"renownArmor": 0,
+	"minimumAttribute1": "Form",
+	"minimumAttributeNumber1": 1
+}, 
+	{
 	"name": "Leather",
 	"armorValue": 1,
 	"renownArmor": 3,

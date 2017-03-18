@@ -3,9 +3,15 @@ var weapons;
 var cayad;
 var armor;
 var shield;
+var generalSkills;
 var weaponItems= "";
 var armorItems = "";
 var shieldItems = "";
+var pathList = "";
+var formList = "";
+var awarenessList = "";
+var essenceList = "";
+var generalSkillsList = ""
 
 
 var raceChoice = {
@@ -117,6 +123,10 @@ $(document).ready(function() {
       $("#weaponLeft").html(weaponItems);
  	  $("#weaponRight").html(weaponItems);
 
+ 	  $('#weaponLeft').on('change', function() {
+ 	  		$('#WeaponL').text(weapons[i].name);
+ 	  });
+
     });
 
 //Armor
@@ -145,9 +155,11 @@ $(document).ready(function() {
 		cayad=data;
 
 		//Temp Variable Numbers
-		var minForm = cayad[0].Form[0];
-		var minAwareness = cayad[0].Awareness[0];
-		var minEssence = cayad[0].Essence[0];		
+		var minForm = cayad[0].Form[1];
+		var minAwareness = cayad[0].Awareness[1];
+		var minEssence = cayad[0].Essence[1];	
+
+		console.log(cayad[0].Paths[0].name);	
 
 		function replaceStats(race) {
 			$('#mv').text(race[0].Movement);//Movement
@@ -164,10 +176,62 @@ $(document).ready(function() {
 
 		replaceStats(cayad);
 
+		for (var i = 0; i < cayad[0].Paths.length; i++) {
+	        pathList+= "<option value='" + i + "'>" +
+	          cayad[0].Paths[i].name + "</option>";
+		}	
+      	$("#path").html(pathList);
+
+		for (var i = 0; i < cayad[0].Awareness.length; i++) {
+	        awarenessList+= "<option value='" + i + "'>" +
+	          cayad[0].Awareness[i] + "</option>";
+		}	
+      	$("#awareness").html(awarenessList);
+
+		for (var i = 0; i < cayad[0].Form.length; i++) {
+	        formList+= "<option value='" + i + "'>" +
+	          cayad[0].Form[i] + "</option>";
+		}	
+      	$("#form").html(formList);
+
+
+		for (var i = 0; i < cayad[0].Essence.length; i++) {
+	        essenceList+= "<option value='" + i + "'>" +
+	          cayad[0].Essence[i] + "</option>";
+		}	
+      	$("#essence").html(essenceList);
+
+
+		// function stats(race, stat, container) {
+		// for (var i = 0; i < race[0].stat.length; i++) {
+		// 	        awarenessList+= "<option value='" + i + "'>" +
+		// 	          race[0].stat[i] + "</option>";
+		// 		}
+		// $("#" + containter).html(awarenessList);
+		// };
+
+		// stats("cayad", "Awareness", "awareness");	
+      	console.log(cayad[0].Awareness.length);
+
+	
 
 
 	});
 
+
+	//General Skills
+	http.get("data/generalSkills.json",function(data){
+		generalSkills=data;
+	console.log(generalSkills.length);
+
+	for (var i = 0; i < generalSkills.length; i++){
+        generalSkillsList+= "<option value='" + i + "'>" +
+         	generalSkills[i].name + "</option>";
+	}	
+		$('#General').html(generalSkillsList);
+	});
+
+	//
 
 
 	$('.tooltip').tooltipster();

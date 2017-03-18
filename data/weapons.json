@@ -1,4 +1,18 @@
 [{
+    "name": "Choose Weaapon ",
+    "renownWeaapon": 0,
+    "type": "None",
+    "hands": 0,
+    "threat": "None",
+    "damage": "0",
+    "ep": 0,
+    "minimumAttribute1": "",
+    "minimumAttributeNumber1": "",
+    "minimumAttribute2": "",
+    "minimumAttributeNumber2": "",
+    "special": ""
+},
+    {
     "name": "Dagger ",
     "renownWeaapon": 1,
     "type": "Light",

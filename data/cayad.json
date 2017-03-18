@@ -1,8 +1,8 @@
 [{
 	"Type": "Cayad",
-	"Form": [3, 4, 5, 6, 7],
-	"Awareness": [3, 4, 5],
-	"Essence": [2, 3, 4, 5, 6],
+	"Form": ["Form", 3, 4, 5, 6, 7],
+	"Awareness": ["Awareness", 3, 4, 5],
+	"Essence": ["Essence", 2, 3, 4, 5, 6],
 	"Movement": 5,
 	"Melee": 3,
 	"Armor": 1,
@@ -11,6 +11,12 @@
 	"attributePoints": 4,
 	"renown": 34,
 	"Paths": [{
+		"name": "Primary Path",
+		"bonusStat": "None",
+		"bonusNumber": 0,
+		"primaryStat": "Essence"
+	}, 
+		{
 		"name": "Blood Magic",
 		"bonusStat": "EP",
 		"bonusNumber": 1,

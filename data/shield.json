@@ -1,7 +1,17 @@
 [{
+	"name": "Choose Shield",
+	"shieldValue": 0,
+	"renownShield": 0,
+	"hands": 0,
+	"minimumAttribute1": "Form",
+	"minimumAttributeNumber1": 1,
+	"minimumAttribute2": "",
+	"minimumAttributeNumber2": ""
+},
+	{
 	"name": "Buckler",
 	"shieldValue": 1,
-	"renownSjield": 2,
+	"renownShield": 2,
 	"hands": 1,
 	"minimumAttribute1": "Form",
 	"minimumAttributeNumber1": 3,
@@ -10,7 +20,7 @@
 }, {
 	"name": "Kite Shield",
 	"shieldValue": 3,
-	"renownSheild": 7,
+	"renownShield": 7,
 	"hands": 2,
 	"minimumAttribute1": "Form",
 	"minimumAttributeNumber1": 6,
