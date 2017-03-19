@@ -1,18 +1,4 @@
-[
-	{
-		"Type": "Devoid",
-		"Form": [3,4,5],
-		"Awareness": [3,4,5],
-		"Essence":[1,2,3],
-		"Movement": 4,
-		"Melee": 2,
-		"Armor": 0,
-		"Ranged": 2,
-		"skillPoints":8,
-		"attributePoints":5,
-		"renown": 16, 
-		"Paths": [
-			{
+[{
 				"name":"Melee",
 				"bonusStat": "Melee",
 				"bonusNumber": 1,
@@ -35,7 +21,4 @@
 				"bonusStat": "Essence",
 				"bonusNumber": 1,
 				"primaryStat": "Essence"
-			}
-		]
-	}
-]
+}]

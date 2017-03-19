@@ -1,8 +1,15 @@
+// Flow: Combobox -> onchange event -> update character model -> display card
+
+
 //Cards - Homepage
-var weapons;
-var cayad;
 var armor;
+var awareness;
+var character;
+var essence;
+var form;
+var weapons;
 var shield;
+var path;
 var generalSkills;
 var weaponItems= "";
 var armorItems = "";
@@ -11,7 +18,11 @@ var pathList = "";
 var formList = "";
 var awarenessList = "";
 var essenceList = "";
-var generalSkillsList = ""
+var generalSkillsList = "";
+var awarenessNumber = "";
+var formNumber = "";
+var essenceNumber = "";
+
 
 
 var raceChoice = {
@@ -106,14 +117,36 @@ inputBox.onkeyup = function(){
     document.getElementById('printCardName').innerHTML = inputBox.value;
 }
 
+	function stats(stat, list, container) {
+	for (var i = 0; i < race[0].stat.length; i++) {
+		        list+= "<option value='" + i + "'>" +
+		          race[0].stat[i] + "</option>";
+			}
+	$("#" + containter).html(awarenessList);
+	};
+
+	function replaceStats(race) {
+			$('#mv').text(race.Movement);//Movement
+			$('#ml').text(race.Melee);//Melee
+			$('#rg').text(race.Ranged);//Ranged
+			$('#ar').text(race.Armor);//Armor
+			$('#skillNumber').text(race.skillPoints)//Skill Points
+			$('#renown').text(race.renown)//Renown
+			$('#attributeNumber').text(race.attributePoints)
+			// $('#in').text(Math.ceil((minAwareness+minEssence)/2));//Initiative
+			// $('#ep').text(Math.ceil((minForm+minAwareness+minEssence)/3));//Exhaustion
+			// $('#attributeNumber').text(race.attributePoints)	//Attribute Points
+
+		}
+
 
 $(document).ready(function() {
 
 // Weapon JSON
-	http.get("data/weapons.json",function(data){
+	http.get("data/general/weapons.json",function(data){
 		weapons=data;
-		console.log(weapons.length);
-		console.log(weapons[0].name);
+		// console.log(weapons.length);
+		// console.log(weapons.name);
 
     
     for (var i = 0; i < weapons.length; i++){
@@ -130,7 +163,7 @@ $(document).ready(function() {
     });
 
 //Armor
-	http.get("data/armor.json",function(data){
+	http.get("data/general/armor.json",function(data){
 		armor = data;
 	   for (var i = 0; i < armor.length; i++) {
 	        armorItems+= "<option value='" + i + "'>" +
@@ -140,7 +173,7 @@ $(document).ready(function() {
     });
 
 //Shield
-	http.get("data/shield.json",function(data){
+	http.get("data/general/shield.json",function(data){
 		shield = data;
 	   for (var i = 0; i < shield.length; i++) {
 	        shieldItems+= "<option value='" + i + "'>" +
@@ -149,80 +182,60 @@ $(document).ready(function() {
       $("#shield").html(shieldItems);
     });
 
+//Path
+	http.get("data/cayad/path.json", function(data){
+		path = data;
+		for(var i=0; i < path.length; i++) {
+			pathList += "<option value='" + i + "'>" +
+	          path[i].name + "</option>";
+		}
+		$("#path").html(pathList);
+	});
+
+//Form
+	http.get("data/cayad/form.json", function(data){
+		form = data;
+		for(var i=0; i < form.length; i++) {
+			formNumber += "<option value='" + i + "'>" +
+	          form[i] + "</option>";
+		}
+		$("#form").html(formNumber);
+	});
+
+
+//Awarness
+	http.get("data/cayad/awareness.json",function(data){
+		awareness = data;
+	   for (var i = 0; i < awareness.length; i++) {
+	        awarenessNumber += "<option value='" + i + "'>" +
+	          awareness[i] + "</option>";
+		}	
+      $("#awareness").html(awarenessNumber);
+    });
+
+//Essence
+	http.get("data/cayad/essence.json",function(data){
+		essence = data;
+	   for (var i = 0; i < essence.length; i++) {
+	        essenceNumber += "<option value='" + i + "'>" +
+	          essence[i] + "</option>";
+		}	
+      $("#essence").html(essenceNumber);
+    });
 
 // Cayad JSON
-	http.get("data/cayad.json",function(data){
-		cayad=data;
-
-		//Temp Variable Numbers
-		var minForm = cayad[0].Form[1];
-		var minAwareness = cayad[0].Awareness[1];
-		var minEssence = cayad[0].Essence[1];	
-
-		console.log(cayad[0].Paths[0].name);	
-
-		function replaceStats(race) {
-			$('#mv').text(race[0].Movement);//Movement
-			$('#ml').text(race[0].Melee);//Melee
-			$('#rg').text(race[0].Ranged);//Ranged
-			$('#df').text(Math.ceil((minForm+minAwareness)/2));//Defense
-			$('#ar').text(race[0].Armor);//Armor
-			$('#in').text(Math.ceil((minAwareness+minEssence)/2));//Initiative
-			$('#ep').text(Math.ceil((minForm+minAwareness+minEssence)/3));//Exhaustion
-			$('#skillNumber').text(race[0].skillPoints)//Skill Points
-			$('#attributeNumber').text(race[0].attributePoints)	//Attribute Points
-			$('#renown').text(race[0].renown)//Renown
-		}
-
-		replaceStats(cayad);
-
-		for (var i = 0; i < cayad[0].Paths.length; i++) {
-	        pathList+= "<option value='" + i + "'>" +
-	          cayad[0].Paths[i].name + "</option>";
-		}	
-      	$("#path").html(pathList);
-
-		for (var i = 0; i < cayad[0].Awareness.length; i++) {
-	        awarenessList+= "<option value='" + i + "'>" +
-	          cayad[0].Awareness[i] + "</option>";
-		}	
-      	$("#awareness").html(awarenessList);
-
-		for (var i = 0; i < cayad[0].Form.length; i++) {
-	        formList+= "<option value='" + i + "'>" +
-	          cayad[0].Form[i] + "</option>";
-		}	
-      	$("#form").html(formList);
-
-
-		for (var i = 0; i < cayad[0].Essence.length; i++) {
-	        essenceList+= "<option value='" + i + "'>" +
-	          cayad[0].Essence[i] + "</option>";
-		}	
-      	$("#essence").html(essenceList);
-
-
-		// function stats(race, stat, container) {
-		// for (var i = 0; i < race[0].stat.length; i++) {
-		// 	        awarenessList+= "<option value='" + i + "'>" +
-		// 	          race[0].stat[i] + "</option>";
-		// 		}
-		// $("#" + containter).html(awarenessList);
-		// };
-
-		// stats("cayad", "Awareness", "awareness");	
-      	console.log(cayad[0].Awareness.length);
-
+	http.get("data/cayad/cayad.json",function(data){
+		character=data;
 	
-
+	replaceStats(character);
 
 	});
 
 
-	//General Skills
-	http.get("data/generalSkills.json",function(data){
+//General Skills
+	http.get("data/skills/generalSkills.json",function(data){
 		generalSkills=data;
-	console.log(generalSkills.length);
+
 
 	for (var i = 0; i < generalSkills.length; i++){
         generalSkillsList+= "<option value='" + i + "'>" +
@@ -231,7 +244,7 @@ $(document).ready(function() {
 		$('#General').html(generalSkillsList);
 	});
 
-	//
+	
 
 
 	$('.tooltip').tooltipster();
