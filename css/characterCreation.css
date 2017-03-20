@@ -160,6 +160,9 @@
     font-weight: bold;
     margin-top: -1.8em;
     margin-left: .5em;
+    overflow: hidden;
+    min-height: 1em;
+    max-height: 1em;
 }
 
 /*Race Specific Art*/
@@ -345,6 +348,22 @@ div.tab button.active {
     /* border: 1px solid #fff; */
 }
 
+ul {
+    list-style: none;
+    display: inline-block;
+    margin-left: -2.5em;
+    line-height: 1.4em;
+    font-size: .9em;
+}
+
+
+.checkbox {
+    width: 2em;
+    height: 1em;
+    margin-left: -0.5em;
+    /* padding-left: 5em; */
+}
+
 /* Style the tab content */
 .tabcontent {
     float: left;
@@ -357,6 +376,7 @@ div.tab button.active {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     background: white;
-    /* color: black; */
+    overflow: auto;
+    /* color: ssssblack; */
     /* box-shadow: 2px 2px 8px #000; */
 }

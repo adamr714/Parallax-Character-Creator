@@ -7,14 +7,6 @@
 	"minimumAttributeNumber1": 4,
 	"costToLearn": 1
 }, {
-	"name": "Defensive Stanc",
-	"description": "Defense: Passive | Character adds 1 to defense skill when in melee combat.",
-	"epCost": "Passive",
-	"Updkeep": "No",
-	"minimumAttribute1": "Awareness",
-	"minimumAttributeNumber1": 4,
-	"costToLearn": 1
-}, {
 	"name": "Defensive Stance",
 	"description": "Defense: Passive | Character adds 1 to defense skill when in melee combat.",
 	"epCost": "Passive",

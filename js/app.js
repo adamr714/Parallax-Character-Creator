@@ -23,6 +23,7 @@ var awarenessNumber = "";
 var formNumber = "";
 var essenceNumber = "";
 
+var currentForm;
 
 
 var raceChoice = {
@@ -111,56 +112,60 @@ var renderList = function() {
 	}   
 };
 
-var inputBox = document.getElementById('cardName');
 
-inputBox.onkeyup = function(){
-    document.getElementById('printCardName').innerHTML = inputBox.value;
+//Populate Weapons	
+function populateWeapons(elementId) {
+  var select = $('#' + elementId)
+  var options;
+  
+  for (var i = 0; i < weapons.length; i++){
+        options += "<option ";
+          if (i==0) {
+          options += 'selected="selected"';
+          }
+        options +=" value='" + i + "'>" + weapons[i].name + "</option>";
+	}	
+  select.html(options);
 }
 
-	function stats(stat, list, container) {
-	for (var i = 0; i < race[0].stat.length; i++) {
-		        list+= "<option value='" + i + "'>" +
-		          race[0].stat[i] + "</option>";
-			}
-	$("#" + containter).html(awarenessList);
-	};
 
-	function replaceStats(race) {
-			$('#mv').text(race.Movement);//Movement
-			$('#ml').text(race.Melee);//Melee
-			$('#rg').text(race.Ranged);//Ranged
-			$('#ar').text(race.Armor);//Armor
-			$('#skillNumber').text(race.skillPoints)//Skill Points
-			$('#renown').text(race.renown)//Renown
-			$('#attributeNumber').text(race.attributePoints)
-			// $('#in').text(Math.ceil((minAwareness+minEssence)/2));//Initiative
-			// $('#ep').text(Math.ceil((minForm+minAwareness+minEssence)/3));//Exhaustion
-			// $('#attributeNumber').text(race.attributePoints)	//Attribute Points
-
-		}
+//Replace Static Stats from JSON file
+function replaceStats(race) {
+		$('#mv').text(race.Movement);//Movement
+		$('#ml').text(race.Melee);//Melee
+		$('#rg').text(race.Ranged);//Ranged
+		$('#ar').text(race.Armor);//Armor
+		$('#skillNumber').text(race.skillPoints)//Skill Points
+		$('#renown').text(race.renown)//Renown
+		$('#attributeNumber').text(race.attributePoints)
+	}
 
 
+
+//Document Ready Stuff Goes Here
 $(document).ready(function() {
 
-// Weapon JSON
+// Weapons
 	http.get("data/general/weapons.json",function(data){
 		weapons=data;
-		// console.log(weapons.length);
-		// console.log(weapons.name);
+		populateWeapons("weaponLeft");
+		populateWeapons("weaponRight");
 
-    
-    for (var i = 0; i < weapons.length; i++){
-        weaponItems+= "<option value='" + i + "'>" +
-          weapons[i].name + "</option>";
-	}	
-      $("#weaponLeft").html(weaponItems);
- 	  $("#weaponRight").html(weaponItems);
 
- 	  $('#weaponLeft').on('change', function() {
- 	  		$('#WeaponL').text(weapons[i].name);
- 	  });
+
+		$("#weaponLeft").on("change", function(){
+			var option = $(this).find('option:selected').text();
+			$('#WeaponL').text(option);		
+		    // alert($(this).val(option));
+		});
+
+		$("#weaponRight").on("change", function(){
+			var option = $(this).find('option:selected').text();
+			$('#WeaponR').text(option);		
+		});
 
     });
+
 
 //Armor
 	http.get("data/general/armor.json",function(data){
@@ -200,6 +205,12 @@ $(document).ready(function() {
 	          form[i] + "</option>";
 		}
 		$("#form").html(formNumber);
+
+
+		$("#form").on("change", function(){
+			var option = $(this).find('option:selected').text();
+			$('#formAttribute').text(option);		
+		});
 	});
 
 
@@ -210,7 +221,14 @@ $(document).ready(function() {
 	        awarenessNumber += "<option value='" + i + "'>" +
 	          awareness[i] + "</option>";
 		}	
-      $("#awareness").html(awarenessNumber);
+	    $("#awareness").html(awarenessNumber);
+
+		$("#awareness").on("change", function(){
+			var option = $(this).find('option:selected').text();
+			$('#awarenessAttribute').text(option);		
+		});
+
+
     });
 
 //Essence
@@ -220,7 +238,12 @@ $(document).ready(function() {
 	        essenceNumber += "<option value='" + i + "'>" +
 	          essence[i] + "</option>";
 		}	
-      $("#essence").html(essenceNumber);
+    	  $("#essence").html(essenceNumber);
+
+  		$("#essence").on("change", function(){
+			var option = $(this).find('option:selected').text();
+			$('#essenceAttribute').text(option);		
+		});
     });
 
 // Cayad JSON
@@ -231,18 +254,28 @@ $(document).ready(function() {
 
 	});
 
-
 //General Skills
 	http.get("data/skills/generalSkills.json",function(data){
 		generalSkills=data;
-
-
+	
+	generalSkillsList += '<ul>';
 	for (var i = 0; i < generalSkills.length; i++){
-        generalSkillsList+= "<option value='" + i + "'>" +
-         	generalSkills[i].name + "</option>";
-	}	
+        generalSkillsList += '<li><input class="checkbox" type="checkbox" "name="generalSkills" id="' + 
+        generalSkills[i].name + '" value="' + i + '">' + '<label for="' + generalSkills[i].name + '">' + 
+        generalSkills[i].name + '</label></li>';
+		}
+		generalSkillsList += '</ul>';
+	
 		$('#General').html(generalSkillsList);
+
+
+		// $("#General").on("change", function(){
+		// 	var option = $(this).find('input:checked').text();
+		// 	$('#cardSkills').add(option);		
+		// 	console.log(option);
+		// });
 	});
+
 
 	
 
