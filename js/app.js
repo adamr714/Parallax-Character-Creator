@@ -132,14 +132,32 @@ function populateWeapons(elementId, position) {
 
 //Replace Static Stats from JSON file
 function replaceStats(race) {
-		$('#mv').text(race.Movement);//Movement
-		$('#ml').text(race.Melee);//Melee
-		$('#rg').text(race.Ranged);//Ranged
-		$('#ar').text(race.Armor);//Armor
-		$('#skillNumber').text(race.skillPoints)//Skill Points
-		$('#renown').text(race.renown)//Renown
-		$('#attributeNumber').text(race.attributePoints)
+	$('#mv').text(race.Movement);//Movement
+	$('#ml').text(race.Melee);//Melee
+	$('#rg').text(race.Ranged);//Ranged
+	$('#ar').text(race.Armor);//Armor
+	$('#skillNumber').text(race.skillPoints)//Skill Points
+	$('#renown').text(race.renown)//Renown
+	$('#attributeNumber').text(race.attributePoints)
+
+	if (race.weaponLeft != null && race.weaponLeft>=0) {
+		var weapon = weapons[race.weaponLeft];
+		$('#WeaponL').text(weapon.name);
+		$('#EPL').text(weapon.ep);
+		$('#TRL').text(weapon.threat);
+		$('#BL').text(weapon.damage);
+		$('#TypeL').text(weapon.type);
 	}
+
+	if (race.weaponRight != null && race.weaponRight>=0) {
+		var weapon = weapons[race.weaponRight];
+		$('#WeaponR').text(weapon.name);
+		$('#EPR').text(weapon.ep);
+		$('#TRR').text(weapon.threat);
+		$('#BR').text(weapon.damage);
+		$('#TypeR').text(weapon.type);
+	}
+}
 
 
 
@@ -156,18 +174,14 @@ $(document).ready(function() {
 
 		$("#weaponLeft").on("change", function(event){
 			var selectedWeapon=$(event.target).children('option:selected').val();
-			var weapon=weapons[selectedWeapon];
-			debugger;
-
-			$('#WeaponL').text(weapon.name);
-			$().text(weapon.)
-		    // alert($(this).val(option));
+			character.weaponLeft = parseInt(selectedWeapon);
+			replaceStats(character);
 		});
 
 		$("#weaponRight").on("change", function(){
 			var selectedWeapon=$(event.target).children('option:selected').val();
-			var weapon=weapons[selectedWeapon];
-			$('#WeaponR').text(weapon.name);		
+			character.weaponRight = parseInt(selectedWeapon);
+			replaceStats(character);
 		});
 
     });
