@@ -114,17 +114,18 @@ var renderList = function() {
 
 
 //Populate Weapons	
-function populateWeapons(elementId) {
+function populateWeapons(elementId, position) {
   var select = $('#' + elementId)
-  var options;
+  var options='<option selected="selected" value="-1">Choose '+ position + ' Weapon</option>';
   
   for (var i = 0; i < weapons.length; i++){
         options += "<option ";
-          if (i==0) {
+          if (i<0) {
           options += 'selected="selected"';
           }
         options +=" value='" + i + "'>" + weapons[i].name + "</option>";
 	}	
+
   select.html(options);
 }
 
@@ -148,20 +149,25 @@ $(document).ready(function() {
 // Weapons
 	http.get("data/general/weapons.json",function(data){
 		weapons=data;
-		populateWeapons("weaponLeft");
-		populateWeapons("weaponRight");
+		populateWeapons("weaponLeft", "Left");
+		populateWeapons("weaponRight", "Right");
 
 
 
-		$("#weaponLeft").on("change", function(){
-			var option = $(this).find('option:selected').text();
-			$('#WeaponL').text(option);		
+		$("#weaponLeft").on("change", function(event){
+			var selectedWeapon=$(event.target).children('option:selected').val();
+			var weapon=weapons[selectedWeapon];
+			debugger;
+
+			$('#WeaponL').text(weapon.name);
+			$().text(weapon.)
 		    // alert($(this).val(option));
 		});
 
 		$("#weaponRight").on("change", function(){
-			var option = $(this).find('option:selected').text();
-			$('#WeaponR').text(option);		
+			var selectedWeapon=$(event.target).children('option:selected').val();
+			var weapon=weapons[selectedWeapon];
+			$('#WeaponR').text(weapon.name);		
 		});
 
     });
@@ -242,7 +248,7 @@ $(document).ready(function() {
 
   		$("#essence").on("change", function(){
 			var option = $(this).find('option:selected').text();
-			$('#essenceAttribute').text(option);		
+			$('#fessenceAttribute').text(option);		
 		});
     });
 
