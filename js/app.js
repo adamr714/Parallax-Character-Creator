@@ -157,6 +157,7 @@ function replaceStats(race) {
 		$('#BR').text(weapon.damage);
 		$('#TypeR').text(weapon.type);
 	}
+
 }
 
 
@@ -229,7 +230,14 @@ $(document).ready(function() {
 
 		$("#form").on("change", function(){
 			var option = $(this).find('option:selected').text();
-			$('#formAttribute').text(option);		
+			$("#formDice" ).empty();
+
+			var optionNumber = parseInt(option);
+			
+			for (var i=0; i < optionNumber; i++){
+		        $('<div class="dice"><img src="img/white.png"></div>').appendTo('#formDice');
+		        console.log($('#formDice'));
+			}
 		});
 	});
 
@@ -245,10 +253,15 @@ $(document).ready(function() {
 
 		$("#awareness").on("change", function(){
 			var option = $(this).find('option:selected').text();
-			$('#awarenessAttribute').text(option);		
+			$("#awarenessDice").empty();
+
+			var optionNumber = parseInt(option);
+			
+			for (var i=0; i < optionNumber; i++){
+		        $('<div class="dice"><img src="img/white.png"></div>').appendTo('#awarenessDice');
+			}
+
 		});
-
-
     });
 
 //Essence
@@ -258,11 +271,19 @@ $(document).ready(function() {
 	        essenceNumber += "<option value='" + i + "'>" +
 	          essence[i] + "</option>";
 		}	
-    	  $("#essence").html(essenceNumber);
+    	
+    	$("#essence").html(essenceNumber);
 
   		$("#essence").on("change", function(){
 			var option = $(this).find('option:selected').text();
-			$('#fessenceAttribute').text(option);		
+			$("#essenceDice" ).empty();
+
+			var optionNumber = parseInt(option);
+			
+			for (var i=0; i < optionNumber; i++){
+		        $('<div class="dice"><img src="img/white.png"></div>').appendTo('#essenceDice');
+		        console.log($('#essenceDice'));
+			}
 		});
     });
 
