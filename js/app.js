@@ -158,6 +158,7 @@ function replaceStats(race) {
 		$('#TypeR').text(weapon.type);
 	}
 
+	console.log(race.form);
 }
 
 
@@ -221,6 +222,7 @@ $(document).ready(function() {
 //Form
 	http.get("data/cayad/form.json", function(data){
 		form = data;
+		
 		for(var i=0; i < form.length; i++) {
 			formNumber += "<option value='" + i + "'>" +
 	          form[i] + "</option>";
@@ -236,8 +238,19 @@ $(document).ready(function() {
 			
 			for (var i=0; i < optionNumber; i++){
 		        $('<div class="dice"><img src="img/white.png"></div>').appendTo('#formDice');
-		        console.log($('#formDice'));
+		        // console.log($('#formDice'));   
 			}
+
+			var maxForm = form[form.length-1];
+			var blackDice = maxForm - optionNumber;
+			
+			for (var i=0; i < blackDice; i++){
+		        $('<div class="dice"><img src="img/black.png"></div>').appendTo('#formDice');
+		        // console.log($('#formDice'));   
+			}
+
+
+
 		});
 	});
 
@@ -260,6 +273,15 @@ $(document).ready(function() {
 			for (var i=0; i < optionNumber; i++){
 		        $('<div class="dice"><img src="img/white.png"></div>').appendTo('#awarenessDice');
 			}
+
+			var maxAwareness = awareness[awareness.length-1];
+
+			var blackDice = maxAwareness - optionNumber;
+			
+			for (var i=0; i < blackDice; i++){
+		        $('<div class="dice"><img src="img/black.png"></div>').appendTo('#awarenessDice');
+			}
+
 
 		});
     });
@@ -284,6 +306,15 @@ $(document).ready(function() {
 		        $('<div class="dice"><img src="img/white.png"></div>').appendTo('#essenceDice');
 		        console.log($('#essenceDice'));
 			}
+
+			var maxEssence = essence[essence.length-1];
+
+			var blackDice = maxEssence - optionNumber;
+			
+			for (var i=0; i < blackDice; i++){
+		        $('<div class="dice"><img src="img/black.png"></div>').appendTo('#essenceDice');
+			}
+
 		});
     });
 
