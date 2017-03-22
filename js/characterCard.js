@@ -22,97 +22,8 @@ var generalSkillsList = "";
 var awarenessNumber = "";
 var formNumber = "";
 var essenceNumber = "";
-
 var currentForm;
-
-
-var raceChoice = {
-    state: [{
-    		cardTop: 'cayadTop',
-			raceName: 'Cayad',
-			cardArt: 'cayadArt',
-			text: 'A dark and blood-thirsty faction, which seeks revenge for the chaos caused by the great split.',
-			cardBottom: 'cayadBottom',
-            readMore: 'cayadReadMore',
-            create: 'cayadCreator',
-        	},
-        	{
-    		cardTop: 'devoidTop',
-			raceName: 'Devoid',
-			cardArt: 'devoidArt',
-			text: 'The Devoid focus on their ingenuity and engineering to maintain their way of life.',
-			cardBottom: 'devoidBottom',
-            readMore: 'cayadReadMore',
-            create: 'caaydCreator',
-        	},
-        	{
-    		cardTop: 'hadjenTop',
-			raceName: 'Hadjen',
-			cardArt: 'hadjenArt',
-			text: 'The self-appointed lords of Magic who will protect their world at all costs.',
-			cardBottom: 'hadjenBottom',
-            readMore: 'cayadReadMore',
-            create: 'caaydCreator',
-        	},
-        	{
-    		cardTop: 'minotaurTop',
-			raceName: 'Minotaur',
-			cardArt: 'minotaurArt',
-			text: 'A proud race of warriors who live by a code of honor.',
-			cardBottom: 'minotaurBottom',
-            readMore: 'cayadReadMore',
-            create: 'caaydCreator',
-        	},
-        	{
-    		cardTop: 'sicariusTop',
-			raceName: 'Sicarius',
-			cardArt: 'sicariusArt',
-			text: 'Brooding and superstitious, the slightest glimpse of them usually meant a painful and torturous death.',
-			cardBottom: 'sicariusBottom',
-            readMore: 'cayadReadMore',
-            create: 'caaydCreator',
-        	},
-        	{
-    		cardTop: 'tirTop',
-			raceName: 'Tir',
-			cardArt: 'tirArt',
-			text: 'Humans which posses magical talents that are highly sought after by other races.',
-			cardBottom: 'tirBottom',
-            readMore: 'cayadReadMore',
-            create: 'cayadCreator',
-        	}
-    ],
-    currentCard: 0,
-}		
-
-// Render Function
-var renderList = function() {
-	var characterCards = $('#characterCardsContainer');
-	characterCards.empty();
-
-	for (var i=0; i < raceChoice.state.length; i++) {
-		var currentCard = raceChoice.state[i];
-
-	    var infoCard = $('#character').html()
-	        .replace('{{cardTop}}', currentCard.cardTop)
-	        .replace('{{raceName}}', currentCard.raceName)
-	        .replace('{{cardArt}}', currentCard.cardArt)
-	        .replace('{{text}}', currentCard.text)
-	        .replace('{{cardBottom}}', currentCard.cardBottom)
-	        .replace('{{readmMore}}', currentCard.readmMore)
-	        .replace('{{create}}', currentCard.create)
-	    characterCards.append(infoCard);
-
-
-		$('#'+currentCard.create).click(function() {
-			$('#raceSelector').fadeOut(1000, function() {
-				$('#characterCreator').show();
-			});
-		});
-	}   
-};
-
-
+	
 //Populate Weapons	
 function populateWeapons(elementId, position) {
   var select = $('#' + elementId)
@@ -140,6 +51,8 @@ function replaceStats(race) {
 	$('#renown').text(race.renown)//Renown
 	$('#attributeNumber').text(race.attributePoints)
 
+
+
 	if (race.weaponLeft != null && race.weaponLeft>=0) {
 		var weapon = weapons[race.weaponLeft];
 		$('#WeaponL').text(weapon.name);
@@ -158,7 +71,7 @@ function replaceStats(race) {
 		$('#TypeR').text(weapon.type);
 	}
 
-	console.log(race.form);
+	console.log($('#form'));
 }
 
 
@@ -193,8 +106,21 @@ $(document).ready(function() {
 	   for (var i = 0; i < armor.length; i++) {
 	        armorItems+= "<option value='" + i + "'>" +
 	          armor[i].name + "</option>";
-		}	
-      $("#armor").html(armorItems);
+
+		var armorNumber = parseInt($('#ar'));
+			// console.log($('#ar'));
+		
+		$("#armor").on("change", function(){
+			var option = $(this).find('option:selected').text();
+			// var computedArmor = $(this).val() + armorNumber;
+			// console.log($(this).val());
+		});
+
+		}
+
+      	$("#armor").html(armorItems);
+
+
     });
 
 //Shield
@@ -332,15 +258,12 @@ $(document).ready(function() {
 		generalSkillsList += '</ul>';
 	
 		$('#General').html(generalSkillsList);
-
-
-		// $("#General").on("change", function(){
-		// 	var option = $(this).find('input:checked').text();
-		// 	$('#cardSkills').add(option);		
-		// 	console.log(option);
-		// });
 	});
 
+		$("#General").on("change", function(event){
+			var selectedSkill=$(event.target).children('option:selected').val();
+			console.log(selectedSkill);
+		});
 
 	
 
