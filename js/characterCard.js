@@ -47,11 +47,10 @@ function replaceStats(race) {
 	$('#ml').text(race.Melee);//Melee
 	$('#rg').text(race.Ranged);//Ranged
 	$('#ar').text(race.Armor);//Armor
-	$('#skillNumber').text(race.skillPoints)//Skill Points
-	$('#renown').text(race.renown)//Renown
-	$('#attributeNumber').text(race.attributePoints)
-
-
+	$('#skillNumber').text(race.skillPoints);//Skill Points
+	$('#renown').text(race.renown);//Renown
+	$('#attributeNumber').text(race.attributePoints);
+	$('#df').text((race.Form + race.Awareness) / 2);
 
 	if (race.weaponLeft != null && race.weaponLeft>=0) {
 		var weapon = weapons[race.weaponLeft];
@@ -70,6 +69,48 @@ function replaceStats(race) {
 		$('#BR').text(weapon.damage);
 		$('#TypeR').text(weapon.type);
 	}
+
+	// Form Dice
+	$("#formDice" ).empty();
+	for (var i=0; i < race.Form; i++){
+        $('<div class="dice"><img src="img/white.png"></div>').appendTo('#formDice');
+ 	}
+
+	var maxForm = form[form.length-1];
+	var blackDice = maxForm - race.Form;
+	
+	for (var i=0; i < blackDice; i++){
+        $('<div class="dice"><img src="img/black.png"></div>').appendTo('#formDice');
+	}
+	
+	// Awareness Dice
+	$("#awarenessDice").empty();
+	for (var i=0; i < race.Awareness; i++){
+        $('<div class="dice"><img src="img/white.png"></div>').appendTo('#awarenessDice');
+	}
+
+	var maxAwareness = awareness[awareness.length-1];
+	var blackDice = maxAwareness - race.Awareness;
+	
+	for (var i=0; i < blackDice; i++){
+        $('<div class="dice"><img src="img/black.png"></div>').appendTo('#awarenessDice');
+	}
+
+	//Essence Dice
+	$("#essenceDice" ).empty();
+
+	for (var i=0; i < race.Essence; i++){
+    $('<div class="dice"><img src="img/white.png"></div>').appendTo('#essenceDice');
+    console.log($('#essenceDice'));
+	}
+
+	var maxEssence = essence[essence.length-1];
+	var blackDice = maxEssence - race.Essence;
+
+	for (var i=0; i < blackDice; i++){
+    $('<div class="dice"><img src="img/black.png"></div>').appendTo('#essenceDice');
+	}
+
 
 	console.log($('#form'));
 }
@@ -155,22 +196,9 @@ $(document).ready(function() {
 
 		$("#form").on("change", function(){
 			var option = $(this).find('option:selected').text();
-			$("#formDice" ).empty();
 
-			var optionNumber = parseInt(option);
-			
-			for (var i=0; i < optionNumber; i++){
-		        $('<div class="dice"><img src="img/white.png"></div>').appendTo('#formDice');
-		        // console.log($('#formDice'));   
-			}
-
-			var maxForm = form[form.length-1];
-			var blackDice = maxForm - optionNumber;
-			
-			for (var i=0; i < blackDice; i++){
-		        $('<div class="dice"><img src="img/black.png"></div>').appendTo('#formDice');
-		        // console.log($('#formDice'));   
-			}
+			character.Form = parseInt(option);
+			replaceStats(character);
 		});
 	});
 
@@ -186,23 +214,9 @@ $(document).ready(function() {
 
 		$("#awareness").on("change", function(){
 			var option = $(this).find('option:selected').text();
-			$("#awarenessDice").empty();
 
-			var optionNumber = parseInt(option);
-			
-			for (var i=0; i < optionNumber; i++){
-		        $('<div class="dice"><img src="img/white.png"></div>').appendTo('#awarenessDice');
-			}
-
-			var maxAwareness = awareness[awareness.length-1];
-
-			var blackDice = maxAwareness - optionNumber;
-			
-			for (var i=0; i < blackDice; i++){
-		        $('<div class="dice"><img src="img/black.png"></div>').appendTo('#awarenessDice');
-			}
-
-
+			character.Awareness = parseInt(option);
+			replaceStats(character);	
 		});
     });
 
@@ -218,22 +232,9 @@ $(document).ready(function() {
 
   		$("#essence").on("change", function(){
 			var option = $(this).find('option:selected').text();
-			$("#essenceDice" ).empty();
 
-			var optionNumber = parseInt(option);
-			
-			for (var i=0; i < optionNumber; i++){
-		        $('<div class="dice"><img src="img/white.png"></div>').appendTo('#essenceDice');
-		        console.log($('#essenceDice'));
-			}
-
-			var maxEssence = essence[essence.length-1];
-			var blackDice = maxEssence - optionNumber;
-			
-			for (var i=0; i < blackDice; i++){
-		        $('<div class="dice"><img src="img/black.png"></div>').appendTo('#essenceDice');
-			}
-
+			character.Essence = parseInt(option);
+			replaceStats(character);			
 		});
     });
 
