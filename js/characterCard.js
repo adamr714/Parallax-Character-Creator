@@ -59,7 +59,10 @@ function replaceStats(race) {
 	$('#skillNumber').text(race.skillPoints);//Skill Points
 	$('#renown').text(race.renown);//Renown
 	$('#attributeNumber').text(race.attributePoints);
-	$('#df').text((race.Form + race.Awareness) / 2);
+	$('#df').text(Math.ceil((race.Form + race.Awareness) / 2));
+	$('#in').text(Math.ceil((race.Awareness + race.Essence) / 2));
+	$('#ep').text(Math.ceil((race.Form + race.Awareness + race.Essence) / 3));
+
 
 	if (weapons != null) {
 		if (race.weaponLeft != null && race.weaponLeft>=0) {
@@ -211,9 +214,14 @@ $(document).ready(function() {
 			form = data;
 			
 			for(var i=0; i < form.length; i++) {
-				formNumber += "<option value='" + i + "'>" +
-		          form[i] + "</option>";
-			}
+				 formNumber += "<option ";
+		        
+		        if (form[i] == character.Form) {
+		        	formNumber += 'selected="selected"';
+		        }
+		        
+		        formNumber += " value='" + i + "'>" + form[i] + "</option>";
+			}	
 			$("#form").html(formNumber);
 			replaceStats(character);
 
@@ -253,9 +261,18 @@ $(document).ready(function() {
 		http.get("data/cayad/essence.json",function(data){
 			essence = data;
 		   for (var i = 0; i < essence.length; i++) {
-		        essenceNumber += "<option value='" + i + "'>" +
-		          essence[i] + "</option>";
+		        essenceNumber += "<option ";
+		        
+		        if (essence[i] == character.Essence) {
+		        	essenceNumber += 'selected="selected"';
+		        }
+		        
+		        essenceNumber += " value='" + i + "'>" + essence[i] + "</option>";
 			}	
+
+		 //        essenceNumber += "<option value='" + i + "'>" +
+		 //          essence[i] + "</option>";
+			// }	
 	    	
 	    	$("#essence").html(essenceNumber);
 			replaceStats(character);

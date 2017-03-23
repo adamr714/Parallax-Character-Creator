@@ -43,9 +43,9 @@
             <!-- Tabs -->
             <p class="clear spTitle"><strong>Skill Points:</strong> <span class="skillPoints" id="skillNumber">##</span></p>
             <div class="tab">
-               <button class="tablinks" onclick="openPath(event, 'General')"><img src="img/general_path.png"></button>
+               <button class="tablinks" onclick="openPath(event, 'General')" id="defaultOpen"><img src="img/general_path.png"></button>
                <button class="tablinks" onclick="openPath(event, 'BloodMagic')"><img src="img/bm_path.png"></button>
-               <button class="tablinks" onclick="openPath(event, 'Melee')" id="defaultOpen"><img src="img/melee_path.png"></button>
+               <button class="tablinks" onclick="openPath(event, 'Melee')" ><img src="img/melee_path.png"></button>
                <button class="tablinks" onclick="openPath(event, 'PureMagic')"><img src="img/pm_path.png"></button>
                <button class="tablinks" onclick="openPath(event, 'Ranged')"><img src="img/ranged_path.png"></button>
                <button class="tablinks" onclick="openPath(event, 'Subterfuge')"><img src="img/subterfuge_path.png"></button>
@@ -55,18 +55,24 @@
             </div>
             <div id="BloodMagic" class="tabcontent">
                <p>Blood Magic Skills </p>
+               <p>~ Coming Soon ~</p>
             </div>
             <div id="Melee" class="tabcontent">
                <p>Melee Skills</p>
+               <p>~ Coming Soon ~</p>
             </div>
+            
             <div id="PureMagic" class="tabcontent">
-               <p>Pure Magic Skills  </p>
+               <p>Pure Magic Skills</p>
+               <p>~ Coming Soon ~</p>
             </div>
             <div id="Ranged" class="tabcontent">
                <p>Ranged Skills </p>
+               <p>~ Coming Soon ~</p>
             </div>
             <div id="Subterfuge" class="tabcontent">
                <p>Subterfuge Skills</p>
+               <p>~ Coming Soon ~</p>
             </div>
          </div>
          <div class="" id="characterCreatorCard">
@@ -152,7 +158,7 @@
          </div>
 
          <div>   
-            <div id="cardCreatorLayout" class="cardCreatorLayout">
+            <div id="cardCreatorLayout" class="cardCreatorLayout hidden">
                <div class="cardCreatorBackground">
                   <div class="skillDescriptions" id="cardSkills">
                      Test Skills go here!

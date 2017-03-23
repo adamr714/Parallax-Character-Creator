@@ -4,15 +4,199 @@
 		"selected_items":
 		[
 			[
+				"form",
+				"form"
+			],
+			[
+				"E",
+				"Essence"
+			],
+			[
+				"o",
+				"option"
+			],
+			[
+				"pa",
+				"parseInt"
+			],
+			[
+				"sel",
+				"selectedSkill"
+			],
+			[
+				"ar",
+				"armorNumber"
+			],
+			[
+				"are",
+				"armorNumber"
+			],
+			[
+				"arm",
+				"armorValue"
+			],
+			[
+				"ess",
+				"essenceDice"
+			],
+			[
+				"aw",
+				"awarenessDice"
+			],
+			[
+				"a",
+				"awareness"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"opt",
+				"optionNumber"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"Ge",
+				"General"
+			],
+			[
+				"T",
+				"TypeR"
+			],
+			[
+				"EP",
+				"EPR"
+			],
+			[
+				"For",
+				"FormElement"
+			],
+			[
+				"wea",
+				"weaponLeft"
+			],
+			[
+				"ge",
+				"generalSkillsList"
+			],
+			[
+				"gene",
+				"generalSkillsList"
+			],
+			[
+				"path",
+				"pathList"
+			],
+			[
+				"awa",
+				"awarenessNumber"
+			],
+			[
+				"attribute",
+				"attributePoints"
+			],
+			[
+				"char",
+				"character"
+			],
+			[
+				"W",
+				"WeaponL"
+			],
+			[
+				"we",
+				"weaponLeft"
+			],
+			[
+				"gne",
+				"generalSkillsList"
+			],
+			[
+				"Gen",
+				"generalSkillsList"
+			],
+			[
+				"gen",
+				"generalSkills"
+			],
+			[
+				"shiel",
+				"shieldItems"
+			],
+			[
+				"shi",
+				"shieldItems"
+			],
+			[
+				"pu",
+				"populateWeapons"
+			],
+			[
+				"wa",
+				"weapons"
+			],
+			[
+				"e",
+				"essence"
+			],
+			[
+				"re",
+				"replaceStats"
+			],
+			[
+				"t",
+				"textStatus"
+			],
+			[
+				"att",
+				"attributePoints"
+			],
+			[
+				"cha",
+				"characterName"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"card",
+				"cardLayout"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"fol",
+				"float"
+			],
+			[
 				"info",
 				"infoCard"
 			],
 			[
 				"chara",
-				"characterCards"
-			],
-			[
-				"char",
 				"characterCards"
 			],
 			[
@@ -24,16 +208,8 @@
 				"raceName"
 			],
 			[
-				"card",
-				"cardBackground"
-			],
-			[
 				"marg",
 				"margin-left"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"ch",
@@ -74,10 +250,6 @@
 			[
 				"margin",
 				"margin-bottom"
-			],
-			[
-				"t",
-				"text"
 			],
 			[
 				"fon",
@@ -212,10 +384,6 @@
 				"correctAnswer"
 			],
 			[
-				"margi",
-				"margin-bottom"
-			],
-			[
 				"mag",
 				"margin-right"
 			],
@@ -264,10 +432,6 @@
 				"character_name"
 			],
 			[
-				"opt",
-				"option\tTag"
-			],
-			[
 				"marin",
 				"margin-top"
 			],
@@ -292,20 +456,12 @@
 				"lName"
 			],
 			[
-				"re",
-				"renown"
-			],
-			[
 				"creat",
 				"createWeapon"
 			],
 			[
 				"head",
 				"header\tTag"
-			],
-			[
-				"a",
-				"auto"
 			],
 			[
 				"text-a",
@@ -318,10 +474,6 @@
 			[
 				"me",
 				"meta\tTag"
-			],
-			[
-				"padd",
-				"padding-right"
 			],
 			[
 				"padding",
@@ -344,20 +496,12 @@
 				"inline-block"
 			],
 			[
-				"bac",
-				"background-color"
-			],
-			[
 				"html",
 				"html5"
 			],
 			[
 				"h",
 				"html5"
-			],
-			[
-				"ge",
-				"getStudentReport"
 			],
 			[
 				"st",
@@ -370,126 +514,11 @@
 			[
 				"d",
 				"div\tTag"
-			],
-			[
-				"r",
-				"row"
-			],
-			[
-				"he",
-				"height"
-			],
-			[
-				"sig",
-				"Signup"
-			],
-			[
-				"fo",
-				"font-size"
-			],
-			[
-				"pa",
-				"padding-right"
-			],
-			[
-				"wid",
-				"width"
-			],
-			[
-				"i",
-				"input\tTag"
-			],
-			[
-				"text-de",
-				"text-decoration"
-			],
-			[
-				"Mar",
-				"margin"
-			],
-			[
-				"border-r",
-				"border-radius"
-			],
-			[
-				"wi",
-				"width"
-			],
-			[
-				"ita",
-				"italic"
-			],
-			[
-				"background-c",
-				"background-color"
-			],
-			[
-				"te",
-				"text-align"
-			],
-			[
-				"b",
-				"background"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 6552,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/main.css",
-			"settings":
-			{
-				"buffer_size": 5706,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "//Cards - Homepage\nvar raceChoice = {\n    state: [{\n    \t\tcardTop: 'cayadTop',\n\t\t\traceName: 'Cayad',\n\t\t\tcardArt: 'cayadArt',\n\t\t\ttext: 'A dark and blood-thirsty faction, which seeks revenge for the chaos caused by the great split.',\n\t\t\tcardBottom: 'cayadBottom',\n            readMore: 'cayadReadMore',\n            create: 'caaydCreator',\n        \t},\n        \t{\n    \t\tcardTop: 'devoidTop',\n\t\t\traceName: 'Devoid',\n\t\t\tcardArt: 'devoidArt',\n\t\t\ttext: 'The Devoid focus on their ingenuity and engineering to maintain their way of life.',\n\t\t\tcardBottom: 'devoidBottom',\n            readMore: 'cayadReadMore',\n            create: 'caaydCreator',\n        \t},\n        \t{\n    \t\tcardTop: 'hadjenTop',\n\t\t\traceName: 'Hadjen',\n\t\t\tcardArt: 'hadjenArt',\n\t\t\ttext: 'The self-appointed lords of Magic who will protect their world at all costs.',\n\t\t\tcardBottom: 'hadjenBottom',\n            readMore: 'cayadReadMore',\n            create: 'caaydCreator',\n        \t},\n        \t{\n    \t\tcardTop: 'minotaurTop',\n\t\t\traceName: 'Minotaur',\n\t\t\tcardArt: 'minoataurArt',\n\t\t\ttext: 'A proud race of warriors who live by a code of honor.',\n\t\t\tcardBottom: 'minotaurBottom',\n            readMore: 'cayadReadMore',\n            create: 'caaydCreator',\n        \t},\n        \t{\n    \t\tcardTop: 'sicariusTop',\n\t\t\traceName: 'Sicarius',\n\t\t\tcardArt: 'sicariusArt',\n\t\t\ttext: 'Brooding and superstitious, the slightest glimpse of them usually meant a painful and torturous death.',\n\t\t\tcardBottom: 'sicariusBottom',\n            readMore: 'cayadReadMore',\n            create: 'caaydCreator',\n        \t},\n        \t{\n    \t\tcardTop: 'tiTop',\n\t\t\traceName: 'Tir',\n\t\t\tcardArt: 'tirArt',\n\t\t\ttext: 'Humans which posses magical talents that are highly sought after by other races.',\n\t\t\tcardBottom: 'torBottom',\n            readMore: 'cayadReadMore',\n            create: 'caaydCreator',\n        \t}\n    ],\n    currentCard: 0,\n}\t\t\n\n// Render Function\nvar renderList = function() {\n\tvar characterCards = $('#characterCardsContainer');\n\tcharacterCards.empty();\n\n\tfor (var i=0; i <= raceChoice.state.length; i++) {\n\t\tvar currentCard = raceChoice.state[i];\n\n\t    var infoCard = $('#character').html()\n\t        .replace('{{cardTop}}', currentCard.cardTop)\n\t        .replace('{{raceName}}', currentCard.raceName)\n\t        .replace('{{cardArt}}', currentCard.cardArt)\n\t        .replace('{{text}}', currentCard.text)\n\t        .replace('{{cardBottom}}', currentCard.cardBottom)\n\t        .replace('{{readmMore}}', currentCard.readmMore)\n\t        .replace('{{create}}', currentCard.create)\n\t    characterCards.append(infoCard);\t\n\t}   \n};\n\n\n// Data\nvar paths=[\n\t\"Blood Magic\",\n\t\"Ranged\",\n\t\"Melee\"\n]\n\nvar form =[\n\t\"3\",\n\t\"4\",\n\t\"5\",\n\t\"6\",\n\t\"7\"\n]\n\nvar awareness =[\n\t\"3\",\n\t\"4\",\n\t\"5\"\n]\n\nvar essence =[\n\t\"2\",\n\t\"3\",\n\t\"4\",\n\t\"5\",\n\t\"6\"\n]\n\nvar movement = 5;\n\nvar mellee = 3;\n\nvar armor  = 1;\n\nvar ranged = 1;\n\nvar weapons=[\n  \"Select Weapon\",\n  \"dagger\",\n  \"spear\",\n  \"claymore\",\n  \"great axe\",\n  \"great sword\",\n  \"maul\",\n  \"hand axe\",\n  \"rapier\",\n  \"short sword\",\n  \"axe\",\n  \"halberd\",\n  \"long sword\"\n]\n\nvar armor = [\n\t\"cloth\",\n\t\"leather\",\n\t\"chainmail\"\n]\n\nvar shield = [\n\t\"buckler\",\n\t\"kite shielf\"\n]\n\n\n// Functions and inner workings\n\n$('#info').click(function() {\n\t$('#intro').toggleClass('hidden');\n});\n\n\n$('#cayadCardCreator').click(function() {\n\t$('#raceSelector').fadeOut(1000, function() {\n\t\t$('#caaydCreator').removeClass('hidden');\n\t});\n});\n\n$('#cayadCardCreator').click(function() {\n\t$('#info').fadeOut('hidden');\n});\n\n$(document).ready(function() {\n\t$('.tooltip').tooltipster();\n\n\t$('#templates').load('template.html', function() {\n\t\tconsole.log($('#character').html());\n\n\trenderList();\t\n\t});\t\n});",
-			"file": "js/app.js",
-			"file_size": 3624,
-			"file_write_time": 131335957680000000,
-			"settings":
-			{
-				"buffer_size": 3619,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "template.html",
-			"settings":
-			{
-				"buffer_size": 520,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/adamr714/Desktop/projects/quiz_parallax/app.js",
-			"settings":
-			{
-				"buffer_size": 7321,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/adamr714/Desktop/projects/quiz_parallax/index.html",
-			"settings":
-			{
-				"buffer_size": 2635,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -542,30 +571,87 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data"
+	],
 	"file_history":
 	[
-		"/Users/adamr714/Downloads/index (2).html",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/js/characterCard.js",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/css/characterCreation.css",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/cayad/awareness.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/cayad/form.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/card_creator.html",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/cayad/essence.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/general/weapons.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/cayad/form_object.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/cayad/cayad.json",
+		"/Users/adamr714/Desktop/Notes_Thinkful_Prep",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/js/app.js",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/template.html",
 		"/Users/adamr714/Desktop/projects/Capstone_Parallax/index.html",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/skills/meleeSkills.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/skills/generalSkills.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/js/characterName.js",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/general/armor.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/card_creator_test.html",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/css/main.css",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/general/shield.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/cayad/path.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/hadjen/awareness.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/tir/tir.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/sicarius/sicarius.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/devoid/devoid.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/minotaur/minotaur.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/hadjen/hadjen.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/tir/paths.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/sicarius/essence.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/sicarius/paths.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/tir/essence.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/weapons.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/cayad/paths-cayad.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/paths-Cayad.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/minotaur/essence.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/minotaur/paths.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/hadjen/paths.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/hadjen/essence.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/devoid/essence.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/cayad/essence-cayad.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/devoid/paths.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/js/http.js",
+		"/Users/adamr714/Desktop/projects/YouTube/app.js",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/form-cayad.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/awareness-cayad.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/cayad.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/shield.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/armor.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/generalSkills.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/essence-cayad.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/minotaur.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/hadjen.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/tir.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/devoid.json",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/data/sicarius.json",
+		"/Users/adamr714/Desktop/projects/Parallax/js/character.js",
+		"/Users/adamr714/Desktop/projects/Capstone_Parallax/js/tabs.js",
+		"/Users/adamr714/Desktop/projects/quiz_parallax/app.js",
 		"/Users/adamr714/Desktop/projects/Capstone_Parallax/css/float-grid.css",
+		"/Users/adamr714/Desktop/projects/YouTube/index.html",
+		"/Users/adamr714/Desktop/projects/quiz_parallax/index.html",
+		"/Users/adamr714/Downloads/index (2).html",
 		"/Users/adamr714/Desktop/projects/Capstone_Parallax/css/narrow.css",
 		"/Users/adamr714/Desktop/projects/Capstone_Parallax/css/medium.css",
 		"/Users/adamr714/Desktop/projects/Capstone_Parallax/css/wide.css",
-		"/Users/adamr714/Desktop/projects/Capstone_Parallax/template.html",
-		"/Users/adamr714/Desktop/projects/quiz_parallax/app.js",
 		"/Users/adamr714/Desktop/projects/Capstone Parallax/css/main.css",
 		"/Users/adamr714/Desktop/projects/Parallax/index.html",
 		"/Users/adamr714/Desktop/test.html",
 		"/Users/adamr714/Desktop/projects/Parallax/index2.html",
 		"/Users/adamr714/Desktop/projects/YouTube/main.css",
 		"/Users/adamr714/Desktop/projects/YouTube/float-grid.css",
-		"/Users/adamr714/Desktop/projects/YouTube/index.html",
 		"/Users/adamr714/Desktop/projects/quiz_parallax/main.css",
 		"/Users/adamr714/Desktop/projects/Capstone Parallax/css/float-grid.css",
-		"/Users/adamr714/Desktop/projects/quiz_parallax/index.html",
-		"/Users/adamr714/Desktop/Notes_Thinkful_Prep",
 		"/Users/adamr714/Desktop/projects/Parallax/css/main.css",
-		"/Users/adamr714/Desktop/projects/Parallax/js/character.js",
-		"/Users/adamr714/Desktop/projects/YouTube/app.js",
 		"/Users/adamr714/Desktop/projects/Capstone_Parallax",
 		"/Users/adamr714/Downloads/thinkful-youtube-api-challenge-master/js/app.js",
 		"/Users/adamr714/Downloads/thinkful-youtube-api-challenge-master/css/style.css",
@@ -619,29 +705,7 @@
 		"/Users/adamr714/Desktop/projects/Coffee House/css/float-grid.css",
 		"/Users/adamr714/Desktop/projects/Coffee_House/name.js",
 		"/Users/adamr714/Desktop/projects/Coffee_House/index.html",
-		"/Users/adamr714/Desktop/projects/Object Notes.js",
-		"/Users/adamr714/Desktop/projects/gregs_list/index.html",
-		"/Users/adamr714/Desktop/quiz.js",
-		"/Users/adamr714/Desktop/projects/students/js/students.js",
-		"/Users/adamr714/Desktop/projects/hello-world-js/app.js",
-		"/Users/adamr714/Desktop/projects/hello-world-js/index.html",
-		"/Users/adamr714/Desktop/projects/star-wars-responsive-challenge-starter-files-master/css/main.css",
-		"/Users/adamr714/Desktop/projects/star-wars-responsive-challenge-starter-files-master/css/float-grid.css",
-		"/Users/adamr714/Desktop/projects/star-wars-responsive-challenge-starter-files-master/index.html",
-		"/Users/adamr714/Desktop/projects/forms/css/main.css",
-		"/Users/adamr714/Desktop/projects/responsive-grid-example-and-challenge-starter-files-master/css/main.css",
-		"/Users/adamr714/Desktop/projects/responsive-grid-example-and-challenge-starter-files-master/index.html",
-		"/Users/adamr714/Desktop/forms_example.html",
-		"/Users/adamr714/Desktop/projects/gregs_list/indexl.html",
-		"/Users/adamr714/Desktop/projects/gregs_list/css/main.css",
-		"/Users/adamr714/Desktop/form_example.html",
-		"/Users/adamr714/Desktop/projects/css_layout_exercises_starter_files/styles/position-page.css",
-		"/Users/adamr714/Desktop/projects/css_layout_exercises_starter_files/position-exercise.html",
-		"/Users/adamr714/Desktop/Position Property Notes",
-		"/Users/adamr714/Desktop/projects/css_layout_exercises_starter_files/display-exercise.html",
-		"/Users/adamr714/Desktop/projects/css_layout_exercises_starter_files/styles/display-page.css",
-		"/Users/adamr714/Desktop/projects/about-me/test.html",
-		"/Users/adamr714/Desktop/projects/about-me/main.css"
+		"/Users/adamr714/Desktop/projects/Object Notes.js"
 	],
 	"find":
 	{
@@ -661,6 +725,35 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ttest",
+			"t",
+			"choose left",
+			"formDice",
+			"form",
+			"character",
+			"tab",
+			"rab",
+			"path",
+			"awareness",
+			"skill points",
+			"[0]",
+			"cayad",
+			"skills",
+			"select",
+			"hidden",
+			"weapons",
+			"characterName",
+			"renown",
+			"]",
+			"12",
+			"replace",
+			"shield",
+			"stat",
+			"statLabels",
+			"stats",
+			"cardCreatorContent",
+			"col",
+			"1000",
 			"displayCurrentQuestion",
 			"currentQuestion",
 			"currentQusetion",
@@ -711,6 +804,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"character",
+			"renownWeaapon",
 			"results",
 			"<button class=\"\">",
 			"exhaustionPoints",
@@ -727,190 +823,14 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6552,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1662,
-								1662
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 344.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "css/main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5706,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5052,
-								5052
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2528.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3619,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2562,
-								2562
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 623.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "template.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 520,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12,
-								21
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/adamr714/Desktop/projects/quiz_parallax/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7321,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4658,
-								4663
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1999.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Users/adamr714/Desktop/projects/quiz_parallax/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2635,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 48.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"input":
 	{

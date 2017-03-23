@@ -16,6 +16,7 @@ var raceChoice = {
 			cardBottom: 'devoidBottom',
             readMore: 'cayadReadMore',
             create: 'caaydCreator',
+            disabled: 'disabled',
         	},
         	{
     		cardTop: 'hadjenTop',
@@ -25,6 +26,7 @@ var raceChoice = {
 			cardBottom: 'hadjenBottom',
             readMore: 'cayadReadMore',
             create: 'caaydCreator',
+          	disabled: 'disabled',        	
         	},
         	{
     		cardTop: 'minotaurTop',
@@ -34,6 +36,7 @@ var raceChoice = {
 			cardBottom: 'minotaurBottom',
             readMore: 'cayadReadMore',
             create: 'caaydCreator',
+	        disabled: 'disabled',
         	},
         	{
     		cardTop: 'sicariusTop',
@@ -43,6 +46,7 @@ var raceChoice = {
 			cardBottom: 'sicariusBottom',
             readMore: 'cayadReadMore',
             create: 'caaydCreator',
+          	disabled: 'disabled',
         	},
         	{
     		cardTop: 'tirTop',
@@ -52,6 +56,7 @@ var raceChoice = {
 			cardBottom: 'tirBottom',
             readMore: 'cayadReadMore',
             create: 'cayadCreator',
+          	disabled: 'disabled',
         	}
     ],
     currentCard: 0,
@@ -73,6 +78,7 @@ var renderList = function() {
 	        .replace('{{cardBottom}}', currentCard.cardBottom)
 	        .replace('{{readmMore}}', currentCard.readmMore)
 	        .replace('{{create}}', currentCard.create)
+	        .replace('{{disabled}}', currentCard.disabled)
 	    characterCards.append(infoCard);
 
 

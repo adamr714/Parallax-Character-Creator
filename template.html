@@ -7,9 +7,14 @@
 			</div>
 			<div class="{{cardBottom}}">&nbsp;</div>
 			<div class="row center grey">
-				<input class="myButton" type="submit" value="Read More" id="{{readMore}}" />
-				<input class="myButton" type="submit" value="Create" id="{{create}}" />
+				<!-- <input class="myButton" type="submit" value="Read More" id="{{readMore}}" /> -->
+				<input class="myButton" type="submit" {{disabled}} value="Go" onClick="window.location.href='card_creator.html'" />
 			</div>
 		</div>
 	</div>
 </script>
+
+
+
+<!-- Original Line 
+<input class="myButton" type="submit" {{disabled}} value="Create" id="{{create}}" /> -->
