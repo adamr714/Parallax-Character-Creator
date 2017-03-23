@@ -93,7 +93,7 @@ var renderList = function() {
 
 $(document).ready(function() {
 
-	$('.tooltip').tooltipster();
+	// $('.tooltip').tooltipster();
 
 	$('#info').click(function() {
 		$('#intro').toggleClass('hidden');
