@@ -6,6 +6,7 @@ var raceChoice = {
 			text: 'A dark and blood-thirsty faction, which seeks revenge for the chaos caused by the great split.',
 			cardBottom: 'cayadBottom',
             readMore: 'cayadReadMore',
+            myButton: 'myButton',
             create: 'cayadCreator',
         	},
         	{
@@ -16,6 +17,7 @@ var raceChoice = {
 			cardBottom: 'devoidBottom',
             readMore: 'cayadReadMore',
             create: 'caaydCreator',
+			myButton: 'fakeButton',
             disabled: 'disabled',
         	},
         	{
@@ -26,6 +28,7 @@ var raceChoice = {
 			cardBottom: 'hadjenBottom',
             readMore: 'cayadReadMore',
             create: 'caaydCreator',
+			myButton: 'fakeButton',
           	disabled: 'disabled',        	
         	},
         	{
@@ -36,6 +39,7 @@ var raceChoice = {
 			cardBottom: 'minotaurBottom',
             readMore: 'cayadReadMore',
             create: 'caaydCreator',
+			myButton: 'fakeButton',
 	        disabled: 'disabled',
         	},
         	{
@@ -46,6 +50,7 @@ var raceChoice = {
 			cardBottom: 'sicariusBottom',
             readMore: 'cayadReadMore',
             create: 'caaydCreator',
+			myButton: 'fakeButton',            
           	disabled: 'disabled',
         	},
         	{
@@ -56,6 +61,7 @@ var raceChoice = {
 			cardBottom: 'tirBottom',
             readMore: 'cayadReadMore',
             create: 'cayadCreator',
+			myButton: 'fakeButton',
           	disabled: 'disabled',
         	}
     ],
@@ -79,6 +85,7 @@ var renderList = function() {
 	        .replace('{{readmMore}}', currentCard.readmMore)
 	        .replace('{{create}}', currentCard.create)
 	        .replace('{{disabled}}', currentCard.disabled)
+	        .replace('{{myButton}}', currentCard.myButton)
 	    characterCards.append(infoCard);
 
 
@@ -95,8 +102,17 @@ $(document).ready(function() {
 
 	// $('.tooltip').tooltipster();
 
-	$('#info').click(function() {
-		$('#intro').toggleClass('hidden');
+	$('#hide').on("click", function() {
+		$('#intro').fadeOut("slow", function() {
+			$('#info').fadeIn();
+		});
+	});
+
+
+	$('#info').on("click", function() {
+		$('#intro').fadeIn("slow", function() {
+			$("#info").fadeOut();
+		});
 	});
 
 	$('#templates').load('template.html', function() {

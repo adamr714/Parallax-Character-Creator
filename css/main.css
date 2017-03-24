@@ -43,6 +43,10 @@ a {
     line-height: 1.8em;
 }
 
+input.myButton {
+    cursor: pointer;
+}
+
 header .row {
   max-width: 100%;
  }
@@ -75,6 +79,7 @@ input {
     position: absolute;
     right: 20px;
     top: 10px;
+    cursor: pointer;
 }
 
 .card {
@@ -105,6 +110,35 @@ input {
     margin-top: .5em;
     margin-bottom: .5em;
     font-size: 1em;
+  }
+
+
+.fakeButton {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 5px;
+    width: 6em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-size: 1em;
+  }
+
+  .hide {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 5px;
+    width: 6em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-size: 1em;
+    cursor: pointer;
+    position: absolute;
+    bottom: 35em;
+    right: 3em;
   }
 
 .inlineButton {
@@ -294,6 +328,9 @@ input {
     text-shadow: 2px 2px 8px #000;
 }
 
+.col-10 {
+    float: left;
+}
 
 @media all and (min-width: 1201px) {
   .cardLayout {
