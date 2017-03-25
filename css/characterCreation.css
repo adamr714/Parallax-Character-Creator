@@ -427,20 +427,20 @@ ul {
         max-width: 514px;
         margin-right: 2em;
         margin-bottom: 1em;
-        background-image: url(../img/cayad_large_art_sidebar.png);
+  /*      background-image: url(../img/cayad_large_art_sidebar.png);
         background-repeat: no-repeat;
         position: relative;
         bottom: 0em;
         background-position: 0px 211px;
-    }
+*/    }
 
     .form {
       width: 68%;
-      opacity: .8;
+      /*opacity: .8;*/
     }
 
     div.tab {
-    opacity: .8;
+    /*opacity: .8;*/
     }
 
     .cardCreatorContent {
@@ -519,20 +519,20 @@ ul {
         max-width: 514px;
         margin-right: 2em;
         margin-bottom: 1em;
-        background-image: url(../img/cayad_large_art_sidebar.png);
+ /*       background-image: url(../img/cayad_large_art_sidebar.png);
         background-repeat: no-repeat;
         position: relative;
         bottom: 0em;
-        background-position: 0px 211px;
+        background-position: 0px 211px;*/
     }
 
     .form {
       width: 68%;
-      opacity: .8;
+      /*opacity: .8;*/
     }
 
     div.tab {
-    opacity: .8;
+    /*opacity: .8;*/
     }
 
     .cardCreatorContent {
