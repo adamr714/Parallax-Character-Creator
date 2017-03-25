@@ -35,9 +35,14 @@
          <div class="col-12">
             <h2>Cayad Creator</h2>
          </div>
-      </div>
+     </div>
+     <div class="row">
+         <div class="col-12">
+            <button class="homeButton hidden" id="showCreator">Show Creator</button>
+         </div>
+     </div>
       <div class="row">
-         <div class="characterCreationSidebar">
+         <div class="characterCreationSidebar" id="characterCreationSidebar">
             <div class="form">
                <input id="cardName" type="text" name="characterName" placeholder="Character Name">
                <select id="path"></select>
@@ -54,6 +59,8 @@
                <div class="attributeNumber" id="attributeNumber">
                   ##
                </div>
+
+            <div class="homeButton" id="creatorHide">Hide</div>               
             </div>
             <!-- Tabs -->
             <p class="clear spTitle"><strong>Skill Points:</strong> <span class="skillPoints" id="skillNumber">##</span></p>

@@ -307,9 +307,13 @@ $(document).ready(function() {
 		});
 
 	
+	$('#creatorHide').on("click", function() {
+		$('#characterCreationSidebar').fadeOut('slow', function() {
+			$('#showCreator').removeClass('hidden');
+		});
+	});	
 
-
-	$('.tooltip').tooltipster();
+	// $('.tooltip').tooltipster();
 
 	$('#info').click(function() {
 		$('#intro').toggleClass('hidden');
