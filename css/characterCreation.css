@@ -1,19 +1,57 @@
 /*Character Creation Page*/
+
+html, body { 
+  min-height:100%
+}
+
+body {
+  background-image: linear-gradient(#023867, #f6f7f7);
+  box-sizing: border-box;
+  font-family: 'Cinzel', sans-serif;
+}
+
+
 .characterCreationSidebar {
     float: left;
-    width: 40%;
+    /* width: 40%; */
     padding: 1em;
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 2px 2px 8px #000;
-    min-width: 400px;
+    min-width: 28em;
     max-width: 400px;
     margin-right: 2em;
+    margin-bottom: 1em;
 }
 .form {
   float: left;
   width: 66%
 }
+
+header {
+    background-color: black;
+    height: 50px;
+}
+
+.info {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.myButton {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 5px;
+    width: 6em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: 1em;
+  }
+
 
 .attributePoints {
   float: left;
@@ -377,6 +415,278 @@ ul {
     border-top-right-radius: 10px;
     background: white;
     overflow: auto;
-    /* color: ssssblack; */
-    /* box-shadow: 2px 2px 8px #000; */
 }
+
+
+@media all and (min-width: 1201px) {
+
+}
+
+@media all and (max-width: 1200px) and (min-width: 911px) {
+    .characterCreationSidebar {
+        max-width: 514px;
+        margin-right: 2em;
+        margin-bottom: 1em;
+        background-image: url(../img/cayad_large_art_sidebar.png);
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 0em;
+        background-position: 0px 211px;
+    }
+
+    .form {
+      width: 68%;
+      opacity: .8;
+    }
+
+    div.tab {
+    opacity: .8;
+    }
+
+    .cardCreatorContent {
+      min-height: 35em;
+      background-size: cover;
+    }
+
+    .tabcontent {
+    opacity: .8;
+    }
+
+    .cardCreatorBackground {
+    min-width: 28em;
+    min-height: 28em;
+    position: relative;
+    }
+
+    .statContainer {
+    width: 93%;
+    margin-left: 1em;
+    height: 2.5em;
+    margin-top: -31em;
+    }
+
+    .statNumbers {
+    width: 93%;
+    margin-left: 1em;
+    margin-top: -28.6em;
+    }
+
+
+    .attributes {
+    position: absolute;
+    width: 100%;
+    /* background: white; */
+    bottom: 28em;
+    left: 0.2em;
+    }
+
+    .weaponContainer {
+    width: 93%;
+    left: 0.8em;
+    top: 10em;
+    }
+
+    .weaponSpecifics {
+        width: 93%;
+        left: 0.8em;
+        top: 11.9em;
+    }
+
+    .secondWeaponSpecifics {
+        width: 93%;
+        left: 0.8em;
+        top: 13.8em;
+    }
+
+    .shield {
+    margin-left: 14em;
+    top: -8.8em;
+    }
+
+}
+
+@media all and (max-width: 954px) and (min-width: 728px) {
+
+}
+
+@media all and (max-width: 727px) and (min-width: 504px) {
+  h1 {
+  font-size: 1.6em;
+  margin-top: .7em;
+  }
+
+    .characterCreationSidebar {
+        max-width: 514px;
+        margin-right: 2em;
+        margin-bottom: 1em;
+        background-image: url(../img/cayad_large_art_sidebar.png);
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 0em;
+        background-position: 0px 211px;
+    }
+
+    .form {
+      width: 68%;
+      opacity: .8;
+    }
+
+    div.tab {
+    opacity: .8;
+    }
+
+    .cardCreatorContent {
+      min-height: 35em;
+      background-size: cover;
+    }
+
+    .tabcontent {
+    opacity: .8;
+    }
+
+    .cardCreatorBackground {
+    min-width: 28em;
+    min-height: 28em;
+    position: relative;
+    }
+
+    .statContainer {
+    width: 93%;
+    margin-left: 1em;
+    height: 2.5em;
+    margin-top: -31em;
+    }
+
+    .statNumbers {
+    width: 93%;
+    margin-left: 1em;
+    margin-top: -28.6em;
+    }
+
+
+    .attributes {
+    position: absolute;
+    width: 100%;
+    /* background: white; */
+    bottom: 28em;
+    left: 0.2em;
+    }
+
+    .weaponContainer {
+    width: 93%;
+    left: 0.8em;
+    top: 10em;
+    }
+
+    .weaponSpecifics {
+        width: 93%;
+        left: 0.8em;
+        top: 11.9em;
+    }
+
+    .secondWeaponSpecifics {
+        width: 93%;
+        left: 0.8em;
+        top: 13.8em;
+    }
+
+    .shield {
+    margin-left: 14em;
+    top: -8.8em;
+    }
+
+}
+
+
+@media all and (max-width: 504px) and (min-width: 360px) {
+  h1 {
+  font-size: 1.6em;
+  margin-top: .7em;
+  }
+
+.characterCreationSidebar {
+        max-width: 514px;
+        margin-right: 2em;
+        margin-bottom: 1em;
+/*        background-image: url(../img/cayad_large_art_sidebar.png);
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 0em;
+        background-position: 0px 211px;
+*/    }
+
+    .form {
+      width: 68%;
+      /*opacity: .8;*/
+    }
+
+    div.tab {
+    /*opacity: .8;*/
+    }
+
+    .cardCreatorContent {
+      min-height: 35em;
+      background-size: cover;
+    }
+
+    .tabcontent {
+    opacity: .8;
+    }
+
+    .cardCreatorBackground {
+    min-width: 28em;
+    min-height: 28em;
+    position: relative;
+    }
+
+    .statContainer {
+    width: 93%;
+    margin-left: 1em;
+    height: 2.5em;
+    margin-top: -31em;
+    }
+
+    .statNumbers {
+    width: 93%;
+    margin-left: 1em;
+    margin-top: -28.6em;
+    }
+
+
+    .attributes {
+    position: absolute;
+    width: 100%;
+    /* background: white; */
+    bottom: 28em;
+    left: 0.2em;
+    }
+
+    .weaponContainer {
+    width: 93%;
+    left: 0.8em;
+    top: 10em;
+    }
+
+    .weaponSpecifics {
+        width: 93%;
+        left: 0.8em;
+        top: 11.9em;
+    }
+
+    .secondWeaponSpecifics {
+        width: 93%;
+        left: 0.8em;
+        top: 13.8em;
+    }
+
+    .shield {
+    margin-left: 14em;
+    top: -8.8em;
+    }
+
+}
+
+
+
+
+
