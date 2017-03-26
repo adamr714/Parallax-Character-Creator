@@ -306,12 +306,20 @@ $(document).ready(function() {
 			console.log(selectedSkill);
 		});
 
+
+	$('#showCreator').on("click", function() {
+		$('#showCreator').fadeOut('slow', function() {
+			$('#characterCreationSidebar').fadeIn('fast');
+		});
+	});	
 	
 	$('#creatorHide').on("click", function() {
 		$('#characterCreationSidebar').fadeOut('slow', function() {
 			$('#showCreator').removeClass('hidden');
 		});
 	});	
+
+
 
 	// $('.tooltip').tooltipster();
 
