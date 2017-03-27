@@ -169,10 +169,16 @@ header {
     margin-bottom: -2.5em;
 }
 .cardCreatorLayout {
-    float: left;
-    max-width: 44%;
+/*    float: left;
+    max-width: 44%;*/
     margin-bottom: 1.5em;
 }
+#characterCreatorCard{
+    float: left; 
+    width: 100%; 
+    max-width: 400px;
+}
+
 .characterName {
     font-size: 2.2em;
     color: white;
