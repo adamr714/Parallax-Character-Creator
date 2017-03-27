@@ -307,11 +307,12 @@ $(document).ready(function() {
 		});
 
 
-	$('#showCreator').on("click", function() {
-		$('#showCreator').fadeOut('slow', function() {
-			$('#characterCreationSidebar').fadeIn('fast');
-		});
-	});	
+	$('#showCreator').on("click", function() { 
+		$('#showCreator').addClass('hidden'); 
+		$('#characterCreationSidebar').fadeIn('fast'); 
+		// $('#showCreator').fadeOut('slow', function() { // }); 
+	});
+
 	
 	$('#creatorHide').on("click", function() {
 		$('#characterCreationSidebar').fadeOut('slow', function() {
