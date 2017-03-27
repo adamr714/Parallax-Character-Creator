@@ -540,6 +540,13 @@ ul {
         font-size: 1.2em;
         margin-top: 1em;
     }
+
+    .row {
+      max-width: 100%;
+      padding-left: 13px;
+      padding-right: 20px;
+      margin: 0 auto;
+    }
     .creatorCayadArt {
         background-image: none;
         /* background-repeat:no-repeat; */
@@ -552,8 +559,8 @@ ul {
         min-width: 17.2em;
         /* max-width: 18em; */
         
-        margin-right: 2em;
-        margin-left: .5em;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 1em;
         background-image: url(../img/cayad_large_art_sidebar.png);
         background-repeat: no-repeat;
@@ -684,18 +691,13 @@ ul {
     .renown {
         font-size: 3em;
     }
+
     .shield {
-        background-image: url(../img/cayad_shield.png);
         height: 159px;
-        background-repeat: no-repeat;
-        position: relative;
         margin-left: 1em;
         top: .5em;
-        width: 60%;
-        margin-left: q;
-        margin-left: 4em;
-        /* width: 75px; */
-        
+        width: 58%;
+        margin-left: 5em;
         background-size: 70%;
     }
 }
