@@ -9,6 +9,19 @@ body {
     box-sizing: border-box;
     font-family: 'Cinzel', sans-serif;
 }
+
+    #info {
+    margin-top: .6em
+}
+
+i.fa.fa-home {
+    font-size: .7em;
+    margin-right: .2em;
+}
+
+h1 {
+    margin-top: 0.0em;
+}
 .characterCreationSidebar {
     float: left;
     /* width: 40%; */
@@ -395,7 +408,8 @@ ul {
     background: white;
     overflow: auto;
 }
-@media all and (min-width: 1201px) {} @media all and (max-width: 1200px) and (min-width: 911px) {
+
+@media all and (max-width: 1200px)  {
     .characterCreationSidebar {
         max-width: 514px;
         margin-right: 2em;
@@ -465,10 +479,10 @@ ul {
         top: -8.8em;
     }
 }
-@media all and (max-width: 954px) and (min-width: 504px) {
+@media all and (max-width: 954px) {
     h1 {
         font-size: 1.6em;
-        margin-top: .7em;
+        margin-top: .3em;
     }
     .characterCreationSidebar {
         max-width: 28em;
@@ -541,11 +555,16 @@ ul {
 
 
 
-@media all and (max-width: 504px) and (min-width: 300px) {
+@media all and (max-width: 504px) {
     h1 {
         font-size: 1.2em;
-        margin-top: 1em;
+        margin-top: .8em;
     }
+
+    i.fa.fa-home {
+    font-size: .9em;
+    margin-right: .2em;
+}
 
     .row {
       max-width: 100%;
@@ -623,6 +642,7 @@ ul {
         font-size: .8em;
         margin-left: .4em;
     }
+
     .homeButton {
         padding: 3px;
         width: 5.6em;
