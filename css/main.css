@@ -392,6 +392,10 @@ input {
 
 
 @media all and (max-width: 504px) and (min-width: 320px) {
+  .characterText {
+    font-size: .9em;
+  }
+
   .cardLayout {
     width: 100%;
   }
