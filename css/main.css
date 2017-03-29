@@ -150,15 +150,14 @@ input {
     background-color: lightblue;
     border-radius: 5px;
     width: 6em;
-    margin-top: .5em;
+    /* margin-top: .5em; */
     margin-bottom: .5em;
     font-size: 1em;
     cursor: pointer;
-    position: absolute;
-    bottom: .5em;
-    right: .5em;
+    /* position: absolute; */
+    /* bottom: .5em; */
+    /* right: .5em; */
   }
-
 .inlineButton {
     border: 1px solid #000;
     text-align: center;
@@ -166,6 +165,10 @@ input {
     background-color: lightblue;
     border-radius: 5px;
     color: black;
+}
+
+.left {
+  float: left;
 }
 
 .hidden {
@@ -368,8 +371,6 @@ input {
   .cardLayout {
     width: 33%;
   } 
-
-
 }
 
 @media all and (max-width: 1199px) and (min-width: 728px) {
@@ -395,13 +396,22 @@ input {
     width: 100%;
   }
 
+  .textBackground {
+  background-color: white;
+  opacity: .6;
+  /* padding-top: .5em; */
+  /* padding-bottom: .5em; */
+  padding: .5em;
+}
+
+
   h1 {
   font-size: 1.2em;
   margin-top: .7em;
   }
 
   .characterText {
-    margin-left: 12em;
+    margin-left: 8em;
   }
 
   .raceName {

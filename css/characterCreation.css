@@ -235,7 +235,7 @@ header {
     text-align: center;
     width: 2.3em;
     text-shadow: 2px 2px 8px #000;
-    padding-left: .2em;
+    padding-left: .3em;
 }
 .attributes {
     position: absolute;
@@ -715,8 +715,12 @@ ul {
         font-size: .7em;
     }
     .renown {
-        font-size: 3em;
+        font-size: 3.3em;
+        padding-left: em;
+        /* padding-top: .2em; */
+        margin-left: -0.1em;
     }
+
 
     .shield {
         height: 159px;
