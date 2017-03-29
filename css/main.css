@@ -397,8 +397,8 @@ input {
   }
 
   .textBackground {
-  background-color: white;
-  opacity: .6;
+  background-color: wheat;
+  opacity: .8;
   /* padding-top: .5em; */
   /* padding-bottom: .5em; */
   padding: .5em;
