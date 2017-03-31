@@ -1,4 +1,4 @@
-# Parallax_Capstone_1
+# Parallax: Warbands - Character Creator
 
 
 Parallax: Warbands is a table-top miniatures game, which combines elements of a Role Playing Game (RPG) with a table-top miniatures game.  Players are encouraged to make their own characters in which to play with.   
@@ -11,27 +11,30 @@ As there wasn’t a pre-built API, custom JSON files were created and calls were
 
 More than 40 custom JSON files were created for this project, covering races, abilities, skills and weapons.   
 
-A sample data call is: 
-http.get("data/skills/generalSkills.json",function(data)
+A sample data call is: <br />
+`http.get("data/skills/generalSkills.json",function(data)
 {
 		generalSkills=data;
 		…
-	)};
+	)};`
 
 
-Technology Used:
-HTML
-CSS 
-JavaScript 
-JQuery
-JSON
+<strong>Technology Used:</strong>
+HTML<br />
+CSS <br />
+JavaScript<br /> 
+JQuery<br />
+JSON<br />
 
 Additional Resources include: 
-Tooltipster (http://iamceege.github.io/tooltipster/) 
-TinyPNG (https://tinypng.com/) - Used to make images smaller, reducing bandwidth
-Font-Awesome – For the cool looking “Home” image
-StackOverflow – Used to look for similar programming difficulties to overcome challenges
+<ul>
+<li>Tooltipster (http://iamceege.github.io/tooltipster/) </li>
+<li>TinyPNG (https://tinypng.com/) - Used to make images smaller, reducing bandwidth</li>
+<li>Font-Awesome – For the cool looking “Home” image</li>
+<li>StackOverflow – Used to look for similar programming difficulties to overcome challenges</li>
+</ul>
 
-I would also like to thank:
+
+I would also like to thank:<br>
 Neville Bonavia – An amazing programmer and mentor who answered numerous questions and challenging me to make this project all it could be!
 
