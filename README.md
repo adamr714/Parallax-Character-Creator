@@ -19,7 +19,7 @@ A sample data call is: <br />
 	)};`
 
 
-<strong>Technology Used:</strong>
+<strong>Technology Used:</strong><br />
 HTML<br />
 CSS <br />
 JavaScript<br /> 
@@ -30,7 +30,7 @@ Additional Resources include:
 <ul>
 <li>Tooltipster (http://iamceege.github.io/tooltipster/) </li>
 <li>TinyPNG (https://tinypng.com/) - Used to make images smaller, reducing bandwidth</li>
-<li>Font-Awesome – For the cool looking “Home” image</li>
+<li>Font-Awesome (http://fontawesome.io/)– For the cool looking “Home” image</li>
 <li>StackOverflow – Used to look for similar programming difficulties to overcome challenges</li>
 </ul>
 
