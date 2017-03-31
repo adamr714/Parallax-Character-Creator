@@ -3,7 +3,7 @@
 
 Parallax: Warbands is a table-top miniatures game, which combines elements of a Role Playing Game (RPG) with a table-top miniatures game.  Players are encouraged to make their own characters in which to play with.   
 
-Currently, the only way to do this is with an excel file, which is difficult to use and kind of boring.  
+Currently, the only way to do this is with an Excel file, which is difficult to use and kind of boring.  
 
 The goal of this capstone was to take the look and feel of the game and allow players to create their own characters.  Although currently, this project is limited to the Cayad (Wolfman) race – it is really a proof of concept, which will be fully rounded out in the Node.js project.  This project does take into account that users will be looking at it on a desktop as well as mobile device.  
 
