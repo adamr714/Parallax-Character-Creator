@@ -38,5 +38,18 @@ Additional Resources include:
 
 
 I would also like to thank:<br>
-Neville Bonavia – An amazing programmer and mentor who answered numerous questions and challenging me to make this project all it could be!
+<ul>
+<li>Neville Bonavia – An amazing programmer and mentor who answered numerous questions and challenging me to make this project all it could be!</li>
+<li>Rick Hershey - All the beautiful original artwork was created by Rick Hershey for Parallax.</li>
+
+
+</ul>
+
+
+
+
+
+
+
+
 
