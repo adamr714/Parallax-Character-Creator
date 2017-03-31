@@ -5,7 +5,9 @@ Parallax: Warbands is a table-top miniatures game, which combines elements of a 
 
 Currently, the only way to do this is with an excel file, which is difficult to use and kind of boring.  
 
-The goal of this capstone was to take the look and feel of the game and allow players to create their own characters.  Although currently, this project is limited to the Cayad (Wolfman) race – it is really a proof of concept, which will be fully rounded out in the Node.js project.  
+The goal of this capstone was to take the look and feel of the game and allow players to create their own characters.  Although currently, this project is limited to the Cayad (Wolfman) race – it is really a proof of concept, which will be fully rounded out in the Node.js project.  This project does take into account that users will be looking at it on a desktop as well as mobile device.  
+
+<img src="img/cayad_large_art.png">
 
 As there wasn’t a pre-built API, custom JSON files were created and calls were made to populate the cards.  The home screen shows the different races and are populated through a template file, which makes it easier to make consistent change as well as add new races in the future.  
 
