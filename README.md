@@ -1,1 +1,37 @@
 # Parallax_Capstone_1
+
+
+Parallax: Warbands is a table-top miniatures game, which combines elements of a Role Playing Game (RPG) with a table-top miniatures game.  Players are encouraged to make their own characters in which to play with.   
+
+Currently, the only way to do this is with an excel file, which is difficult to use and kind of boring.  
+
+The goal of this capstone was to take the look and feel of the game and allow players to create their own characters.  Although currently, this project is limited to the Cayad (Wolfman) race – it is really a proof of concept, which will be fully rounded out in the Node.js project.  
+
+As there wasn’t a pre-built API, custom JSON files were created and calls were made to populate the cards.  The home screen shows the different races and are populated through a template file, which makes it easier to make consistent change as well as add new races in the future.  
+
+More than 40 custom JSON files were created for this project, covering races, abilities, skills and weapons.   
+
+A sample data call is: 
+http.get("data/skills/generalSkills.json",function(data)
+{
+		generalSkills=data;
+		…
+	)};
+
+
+Technology Used:
+HTML
+CSS 
+JavaScript 
+JQuery
+JSON
+
+Additional Resources include: 
+Tooltipster (http://iamceege.github.io/tooltipster/) 
+TinyPNG (https://tinypng.com/) - Used to make images smaller, reducing bandwidth
+Font-Awesome – For the cool looking “Home” image
+StackOverflow – Used to look for similar programming difficulties to overcome challenges
+
+I would also like to thank:
+Neville Bonavia – An amazing programmer and mentor who answered numerous questions and challenging me to make this project all it could be!
+
