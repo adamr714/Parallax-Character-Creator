@@ -1,7 +1,7 @@
 # Parallax: Warbands - Character Creator
 
 
-Parallax: Warbands is a table-top miniatures game, which combines elements of a Role Playing Game (RPG) with a table-top miniatures game.  Players are encouraged to make their own characters in which to play with.   
+Parallax: Warbands is a table-top miniatures game, which combines elements of a Role Playing Game (RPG) with a table-top miniatures game.  Players are encouraged to make their own characters in which to play with.  Parallax is a table-top game which I created and developed, which launched and successfully funded on Kickstarter.  This is a work of passion, to see more on the game please visit <a href="www.parallaxminiatures.com" target="_blank">Parallax Miniatures</a>. 
 
 Currently, the only way to do this is with an Excel file, which is difficult to use and kind of boring.  
 
@@ -43,6 +43,15 @@ I would also like to thank:<br>
 <li>Rick Hershey - All the beautiful original artwork was created by Rick Hershey for Parallax.</li>
 </ul>
 
+<strong>Development Roadmap</strong>
+This is v1.0 of the app, but future enhancements are expected to include:
+
+<ul>
+<li>Use all 6 races - currently only the Cayad is active</li>
+<li>Have all the skills path work and populate the back of the card whhen chosen</li>
+<li>Have the Attribute Points and Skill Points deduct when the appropriate choices are chosen</li>
+<li>Have weapons populate by 1 or 2 handed and then remove choices which aren't vaild</li>
+</ul>
 
 
 
